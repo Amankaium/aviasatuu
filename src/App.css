@@ -1,3 +1,12 @@
+:root {
+	--body-color: #2e6ce7;
+	--button-color-normal: #e65425;
+	--button-color-hover: #f58020;
+	--button-color-active: #fcc02a;
+	--text-color: #443e3e;
+	--second-text-color: #999999;
+}
+
 @font-face {
 	font-family: 'Inter-Bold';
 	src: url(./assets/fonts/Inter-Bold.woff2);
@@ -38,21 +47,17 @@
 body {
 	margin: 0;
 	font-family: 'Inter-Regular';
+	background-color: var(--body-color);
+}
+
+.container {
+	width: 1130px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 .App {
 	text-align: center;
-}
-
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
 }
 
 .App-header {
@@ -64,17 +69,4 @@ body {
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
 }
