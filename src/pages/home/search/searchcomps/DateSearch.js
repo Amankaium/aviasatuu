@@ -3,7 +3,7 @@ import './DateSearch.css'
 
 function DateSearch() {
   return (
-    <div><input type="date" placeholder='dd-mm' value='' className='whenSP'/></div>
+    <div><input type="date" className='whenSP'/></div>
     )
 }
 
