@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Language from './Language';
-import lang from '../../assets/icons/lang.svg';
+import lang from '../../../assets/icons/lang.svg';
 import './Language.css';
 
 

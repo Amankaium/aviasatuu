@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import Account from './Account';
-import Vector from '../../assets/icons/Vector.svg';
-import settings from '../../assets/icons/settings.svg';
-import documents from '../../assets/icons/documents.svg';
-import ticket from '../../assets/icons/ticket.svg';
+import Vector from '../../../assets/icons/Vector.svg';
+import settings from '../../../assets/icons/settings.svg';
+import documents from '../../../assets/icons/documents.svg';
+import ticket from '../../../assets/icons/ticket.svg';
 import { Link } from 'react-router-dom';
 import './Account.css';
 
