@@ -5,14 +5,14 @@ import Flights from './pages/flights/Flights';
 import Passengers from './pages/passengers/Passengers';
 import Error from './pages/error/Error';
 import CheckoutPage from './pages/checkoutpage/CheckoutPage';
-import LanguageMenu from './components/navbar/language/LanguageMenu';
-import AccountMenu from './components/navbar/account/AccountMenu';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
 	return (
 		<div className='container'>
 			<Router>
 				<Switch>
+					<Route exact path='/' component={Navbar} />
 					<Route exact path='/' component={Home} />
 					<Route path='/flights' component={Flights} />
 					<Route path='/passengers' component={Passengers} />

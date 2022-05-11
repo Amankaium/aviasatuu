@@ -1,14 +1,17 @@
 import React from 'react';
 import './Navbar.css';
-import LanguageMenu from './language/LanguageMenu.jsx';
-import AccountMenu from './account/AccountMenu.jsx';
+import AccountMenu from './account/AccountMenu';
+import LanguageMenu from './language/LanguageMenu';
 
-
-const Navbar = () => {
-	render (
-		<AccountMenu />
-		<LanguageMenu />
+function Navbar() {
+	return (<>
+	<AccountMenu />
+	<LanguageMenu />
+	</>
+		
+				
+			
+		
 	);
-};
-
+	};
 export default Navbar;
