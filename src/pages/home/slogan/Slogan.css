@@ -1,0 +1,40 @@
+h1{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 49px;
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 454px;
+    height: 98px;
+    left: 152px;
+    top: 473px;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 385px;
+    height: 54px;
+    left: 154px;
+    top: 601px;
+
+}
+
+.plane-img{
+    position: absolute;
+width: 578px;
+height: 205px;
+left: 669px;
+top: 461px;
+
+background: url(../../../assets/images/plane.png);
+}

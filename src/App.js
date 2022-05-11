@@ -1,24 +1,26 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Home from './pages/home/Home';
 import Flights from './pages/flights/Flights';
 import Passengers from './pages/passengers/Passengers';
 import Error from './pages/error/Error';
 import CheckoutPage from './pages/checkoutpage/CheckoutPage';
-import Navbar from './components/navbar/Navbar';
+import Navbar from './pages/navbar/Navbar';
 
 function App() {
 	return (
 		<div className='container'>
 			<Router>
-				<Switch>
-					<Route exact path='/' component={Navbar} />
-					<Route exact path='/' component={Home} />
-					<Route path='/flights' component={Flights} />
-					<Route path='/passengers' component={Passengers} />
-					<Route path='/checkout' component={CheckoutPage} />
-					<Route path='*' component={Error} />
-				</Switch>
+				<Navbar />
+				<Routes>
+					<Route path='/' element={<App />} />
+					<Route index element={<Home />} />
+					<Route path='flights' element={<Flights />} />
+					<Route path='passengers' element={<Passengers />} />
+					<Route path='checkout' element={<CheckoutPage />} />
+					<Route path='*' element={<Error />} />
+				</Routes>
 			</Router>
 		</div>
 	);
