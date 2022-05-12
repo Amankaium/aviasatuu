@@ -4,7 +4,7 @@
 	--button-color-hover: #f58020;
 	--button-color-active: #fcc02a;
 	--text-color: #443e3e;
-	--second-text-color: #999999;
+	--second-text-color: #999;
 	--light-color: #fff;
 }
 
@@ -12,19 +12,19 @@
 	font-family: 'Inter-Bold';
 	src: url(./assets/fonts/Inter-Bold.woff2);
 	font-weight: 700;
-	font-style: normal;
+	font-style: swap;
 }
 @font-face {
 	font-family: 'Inter-ExtraBold';
 	src: url(./assets/fonts/Inter-Bold.woff2);
 	font-weight: 800;
-	font-style: normal;
+	font-style: swap;
 }
 @font-face {
 	font-family: 'Inter-Medium';
 	src: url(./assets/fonts/Inter-Bold.woff2);
 	font-weight: 500;
-	font-style: normal;
+	font-style: swap;
 }
 @font-face {
 	font-family: 'Inter-Regular';
@@ -36,7 +36,7 @@
 	font-family: 'Inter-SemiBold';
 	src: url(./assets/fonts/Inter-Bold.woff2);
 	font-weight: 600;
-	font-style: normal;
+	font-style: swap;
 }
 
 html {

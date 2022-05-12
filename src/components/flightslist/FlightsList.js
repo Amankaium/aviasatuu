@@ -47,7 +47,7 @@ const FlightsList = () => {
 					<div className='flights-variants__title'>
 						<ul className='flights-variants__list'>
 							<li className='flights-variants__item caption-text'>Departure</li>
-							<li className='flights-variants__item caption-text'>Arival</li>
+							<li className='flights-variants__item caption-text'>Arrival</li>
 							<li className='flights-variants__item caption-text'>One way</li>
 							<li className='flights-variants__item caption-text'>Airlines</li>
 							<li className='flights-variants__item caption-text'>Price</li>
