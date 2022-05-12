@@ -5,6 +5,7 @@
 	--button-color-active: #fcc02a;
 	--text-color: #443e3e;
 	--second-text-color: #999999;
+	--light-color: #fff;
 }
 
 @font-face {
@@ -38,15 +39,39 @@
 	font-style: normal;
 }
 
-* {
-	margin: 0;
-	padding: 0;
+html {
 	box-sizing: border-box;
 }
 
-body {
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
 	margin: 0;
-	font-family: 'Inter-Regular';
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+body {
+	font-family: 'Inter-Regular', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 150%;
+	color: var(--text-color);
 	background-color: var(--body-color);
 }
 
@@ -56,17 +81,28 @@ body {
 	margin: 0 auto;
 }
 
-.App {
-	text-align: center;
+.title {
+	font-size: 48px;
+	line-height: 49px;
+	font-weight: 800;
 }
 
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+.sub-title {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.caption-text {
+	font-size: 14px;
+	line-height: 17px;
+	font-family: 'InterMedium', sans-serif;
+	font-weight: 400;
+}
+
+.text {
+	font-family: 'IntroRegular', sans-serif;
+	font-size: 18px;
+	line-height: 150%;
+	font-weight: 400;
 }

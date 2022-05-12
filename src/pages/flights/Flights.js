@@ -1,8 +1,9 @@
 import React from 'react';
+import FlightsList from '../../components/flightslist/FlightsList';
 import './Flights.css';
 
 const Flights = () => {
-	return <div>Flights</div>;
+	return <FlightsList />;
 };
 
 export default Flights;
