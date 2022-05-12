@@ -6,32 +6,28 @@
 	background-color: var(--light-color);
 	margin-bottom: 1px;
 }
-
 .flightsItem__times {
 	display: flex;
 }
-
 .flightsItem__times img {
 	width: 20px;
 	margin: 0 23px;
 }
-
 .flightsItem__time {
 	position: relative;
 }
-
 .flightsItem__time span {
 	position: absolute;
 	top: -10px;
 	left: 5px;
-	color: var(--second-text-color);
+	color: var(--gray-color);
 }
 
 .flightsItem__airline {
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 15px;
-	color: var(--text-color);
+	color: var(--dark-color);
 }
 
 .flightsItem__price {
@@ -40,14 +36,13 @@
 	line-height: 150%;
 }
 
-.flightsItem-btn {
+.fligthsItem-btn {
 	padding: 15px 20px;
-	background-color: var(--button-color-normal);
+	background-color: var(--accent-color);
 	border-radius: 5px;
 	color: var(--light-color);
 	transition: all 0.3s ease;
 }
-
-.flightsItem-btn:hover {
-	background-color: var(--button-color-hover);
+.fligthsItem-btn:hover {
+	background-color: var(--hover-color);
 }

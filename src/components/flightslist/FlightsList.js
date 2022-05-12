@@ -24,7 +24,7 @@ const FlightsList = () => {
 
 				<div className='description'>
 					<div className='description__input'>
-						<label className='description__date-label' htmlFor='date'>
+						<label className='desctiption__date-label' htmlFor='date'>
 							<img
 								className='description__date-img'
 								src={arrowDownCalendar}
@@ -48,7 +48,7 @@ const FlightsList = () => {
 						<ul className='flights-variants__list'>
 							<li className='flights-variants__item caption-text'>Departure</li>
 							<li className='flights-variants__item caption-text'>Arrival</li>
-							<li className='flights-variants__item caption-text'>One way</li>
+							<li className='flights-variants__item caption-text'>On way</li>
 							<li className='flights-variants__item caption-text'>Airlines</li>
 							<li className='flights-variants__item caption-text'>Price</li>
 							<li className='flights-variants__item caption-text'>
@@ -62,6 +62,7 @@ const FlightsList = () => {
 						</ul>
 					</div>
 				</div>
+
 				<FlightsItem />
 				<FlightsItem />
 				<FlightsItem />

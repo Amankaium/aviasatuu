@@ -1,5 +1,4 @@
 import React from 'react';
-
 import AccountMenu from './account/AccountMenu';
 import LanguageMenu from './language/LanguageMenu';
 
