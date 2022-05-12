@@ -1,53 +1,48 @@
 .vector {
- position: absolute;
-left: 80%;
-right: 0%;
-top: 10%;
-bottom: 0.4%;
+	position: absolute;
+	left: 80%;
+	right: 0%;
+	top: 10%;
+	bottom: 0.4%;
 }
- 
-
-
-
-
 
 .modal {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0,0,0,0.4);
-    position: fixed;
-    top: 20px;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   opacity: 0;
-   pointer-events: none;
-    transition: 0.5s;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 20px;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.5s;
 }
- .modal.active {
-     opacity: 1;
-     pointer-events: all;
- }
+.modal.active {
+	opacity: 1;
+	pointer-events: all;
+}
 .modal__content {
-    /* padding: 20px;
+	/* padding: 20px;
     border-radius: 12px;
     background-color: white;
    
     width: 50vw;
-    height: 50vh; */ 
-    transform: scale(0.5);
-    transition: 0.4s all;
-    position: relative;
-width: 150px;
-height: 200px;
+    height: 50vh; */
+	transform: scale(0.5);
+	transition: 0.4s all;
+	position: relative;
+	width: 150px;
+	height: 200px;
 
-background: #FFFFFF;
-border-radius: 10px;
+	background: #ffffff;
+	border-radius: 10px;
 }
 
 .modal__content.active {
-    transform: scale(1);
+	transform: scale(1);
 }
 
 /* .account_menu {
@@ -60,63 +55,63 @@ border-radius: 10px;
 } */
 
 .settings {
-    position: absolute;
-width: 55px;
-height: 17px;
-left: 37px;
-top: 23px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: center;
-color: #443E3E;
-text-decoration: none;
+	position: absolute;
+	width: 55px;
+	height: 17px;
+	left: 37px;
+	top: 23px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	color: #443e3e;
+	text-decoration: none;
 }
 
 .documents {
-    position: absolute;
-width: 76px;
-height: 17px;
-left: 37px;
-top: 60px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: center;
-color: #443E3E;
-text-decoration: none;
+	position: absolute;
+	width: 76px;
+	height: 17px;
+	left: 37px;
+	top: 60px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	color: #443e3e;
+	text-decoration: none;
 }
 
 .ticket {
-position: absolute;
-width: 41px;
-height: 17px;
-left: 37px;
-top: 97px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: center;
-color: #443E3E;
-text-decoration: none;
+	position: absolute;
+	width: 41px;
+	height: 17px;
+	left: 37px;
+	top: 97px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	color: #443e3e;
+	text-decoration: none;
 }
 
 .menu-btn {
-position: absolute;
-left: 10%;
-right: 10%;
-top: 70%;
-bottom: 15%;
-background: #E65425;
-border-radius: 5px;
-border: none;
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	top: 70%;
+	bottom: 15%;
+	background: #e65425;
+	border-radius: 5px;
+	border: none;
 }

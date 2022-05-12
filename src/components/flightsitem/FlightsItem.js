@@ -26,7 +26,8 @@ const FlightsItem = () => {
 			</div>
 
 			<p className='flightsItem__price'>778$</p>
-			<Link className='flightsItem-btn caption-text' to='/passengers'>
+
+			<Link className='fligthsItem-btn caption-text' to='/passengers'>
 				Choose flight
 			</Link>
 		</div>

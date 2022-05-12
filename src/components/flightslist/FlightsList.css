@@ -1,7 +1,6 @@
 .flightsList-inner {
 	padding-bottom: 100px;
 }
-
 .flights-header {
 	margin-top: 90px;
 	display: flex;
@@ -15,7 +14,7 @@
 	margin: 0 35px;
 }
 .flights__title-descr {
-	color: var(--second-text-color);
+	color: var(--gray-color);
 	position: absolute;
 	top: -25px;
 	left: 2px;
@@ -31,7 +30,7 @@
 	margin-bottom: 30px;
 }
 
-input[type='date']::webkit-calendar-picker-indicator {
+input[type='date']::-webkit-calendar-picker-indicator {
 	color: var(--light-color);
 	opacity: 0;
 }
@@ -41,12 +40,11 @@ input[type='date']::webkit-calendar-picker-indicator {
 	font-size: 18px;
 	line-height: 150%;
 	background-color: transparent;
-	border: 1px solid var(--second-text-color);
+	border: 1px solid var(--gray-color);
 	color: var(--light-color);
 	outline: none;
 }
-
-.description__date-label {
+.desctiption__date-label {
 	position: relative;
 }
 .description__date-img {
@@ -61,7 +59,7 @@ input[type='date']::webkit-calendar-picker-indicator {
 }
 .flights-variants__list {
 	display: flex;
-	color: var(--second-text-color);
+	color: var(--gray-color);
 }
 .flights-variants__item:first-child {
 	margin-right: 85px;
@@ -79,7 +77,6 @@ input[type='date']::webkit-calendar-picker-indicator {
 .flights-variants__item:nth-child(5) {
 	margin-right: 120px;
 }
-
 .flights-variants__select {
 	font-weight: 400;
 	font-size: 14px;
@@ -89,9 +86,8 @@ input[type='date']::webkit-calendar-picker-indicator {
 	background-color: transparent;
 	outline: none;
 }
-
 .flights-variants__select option {
 	background-color: transparent;
-	color: var(--text-color);
+	color: var(--dark-color);
 	padding: 15px 10px;
 }

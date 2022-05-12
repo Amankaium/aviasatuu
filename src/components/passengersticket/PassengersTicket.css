@@ -6,7 +6,6 @@
 	padding: 50px 60px 40px 40px;
 	position: relative;
 }
-
 .passengersTicket::before {
 	content: '';
 	position: absolute;
@@ -14,10 +13,9 @@
 	right: 350px;
 	width: 37px;
 	height: 37px;
-	background-color: var(--body-color);
+	background-color: var(--background-color);
 	border-radius: 50%;
 }
-
 .passengersTicket::after {
 	content: '';
 	position: absolute;
@@ -25,30 +23,27 @@
 	right: 350px;
 	width: 37px;
 	height: 37px;
-	background-color: var(--body-color);
+	background-color: var(--background-color);
 	border-radius: 50%;
 }
-
 .passengersTicket-header {
 	display: flex;
 	margin-bottom: 75px;
 }
-
 .passengersTicket__title {
 	position: relative;
-	color: var(--text-color);
+	color: var(--dark-color);
 }
-
 .passengersTicket-header__img {
 	margin: 0 35px;
 }
-
 .passengersTicket__title-descr {
-	color: var(--second-text-color);
+	color: var(--gray-color);
 	position: absolute;
 	top: -25px;
 	left: 2px;
 }
+
 .passengersTicket__list {
 	display: flex;
 }
@@ -58,11 +53,13 @@
 .passengersTicket__item:first-child {
 	margin-right: 110px;
 }
+
 .passengersTicket__item-title {
 	font-size: 12px;
-	color: var(--second-text-color);
+	color: var(--gray-color);
 	margin-bottom: 5px;
 }
+
 .passengersTicket__right {
 	display: flex;
 	flex-direction: column;
@@ -76,18 +73,18 @@
 	right: 308px;
 	width: 0px;
 	height: 229px;
-	border-left: 1px dashed var(--body-color);
+	border-left: 1px dashed var(--background-color);
 }
 .passengersTicket__right-title {
 	margin-bottom: 50px;
 }
 .passengersTicket__right-btn {
-	background-color: var(--button-color-normal);
+	background-color: var(--accent-color);
 	padding: 15px 20px;
 	color: var(--light-color);
 	border-radius: 5px;
 	transition: all 0.3s ease;
 }
 .passengersTicket__right-btn:hover {
-	background-color: var(--button-color-hover);
+	background-color: var(--hover-color);
 }

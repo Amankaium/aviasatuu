@@ -1,11 +1,11 @@
 :root {
-	--body-color: #2e6ce7;
-	--button-color-normal: #e65425;
-	--button-color-hover: #f58020;
-	--button-color-active: #fcc02a;
-	--text-color: #443e3e;
-	--second-text-color: #999;
+	--dark-color: #443e3e;
+	--gray-color: #999;
 	--light-color: #fff;
+	--background-color: #2e6ce7;
+	--accent-color: #e65425;
+	--hover-color: #f58020;
+	--active-color: #fcc02a;
 }
 
 @font-face {
@@ -67,12 +67,12 @@ button {
 }
 
 body {
-	font-family: 'Inter-Regular', sans-serif;
+	font-family: 'InterRegular', sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 150%;
-	color: var(--text-color);
-	background-color: var(--body-color);
+	color: var(--dark-color);
+	background-color: var(--background-color);
 }
 
 .container {
