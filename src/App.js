@@ -8,11 +8,17 @@ import Error from './pages/error/Error';
 import CheckoutPage from './pages/checkoutpage/CheckoutPage';
 import Navbar from './pages/navbar/Navbar';
 
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 function App() {
 	return (
 		<div className='container'>
 			<Router>
-				<Navbar />
+				<Navbar /> 
+				
+				
 				<Routes>
 					<Route path='/' element={<App />} />
 					<Route index element={<Home />} />
