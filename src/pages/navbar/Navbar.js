@@ -1,12 +1,13 @@
 import React from 'react';
-import AccountMenu from './account/AccountMenu';
-import LanguageMenu from './language/LanguageMenu';
+
+import Account from './account/Account';
+import Language from './language/Language';
 
 function Navbar() {
 	return (
 		<>
-			<AccountMenu />
-			<LanguageMenu />
+			<Account />
+			<Language />
 		</>
 	);
 }

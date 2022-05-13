@@ -1,28 +1,31 @@
 import React from 'react';
-import { useState } from 'react';
-import Language from './Language';
 import lang from '../../../assets/icons/lang.svg';
-import './Language.css';
+import KG from '../../../assets/icons/KG.svg';
+import RU from '../../../assets/icons/RU.svg';
+import EN from '../../../assets/icons/EN.svg';
 import { Link } from 'react-router-dom';
+import './Language.css';
 
 function LanguageMenu() {
-	const [modalActive, setModalActive] = useState(true);
 	return (
-		<div className='container'>
-			<img
-				className='vector_lang'
-				src={lang}
-				onClick={() => setModalActive(true)}
-			/>
-			<Language active={modalActive} setActive={setModalActive}>
-				<div className='language_menu'>
-					<div className='kgz'>KGZ</div>
-					<div className='eng'>ENG</div>
-					<div className='rus'>Rus</div>
-				</div>
-			</Language>
+		<div className='langImg'>
+			<Link to='/' className='langLogo'>
+				<img src={lang} alt='' />
+			</Link>
+			<div className='langContent'>
+				<Link to='/' className='kg'>
+					<img src={KG} alt='' />{' '}
+				</Link>
+				<Link to='/' className='eng'>
+					{' '}
+					<img src={EN} alt='' />
+				</Link>
+				<Link to='/' className='rus'>
+					{' '}
+					<img src={RU} alt='' />
+				</Link>
+			</div>
 		</div>
 	);
 }
-
 export default LanguageMenu;
