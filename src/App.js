@@ -10,17 +10,11 @@ import SignIn from './pages/signin/SignIn';
 import SignUp from './pages/signup/SignUp';
 import Navbar from './pages/navbar/Navbar';
 
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 function App() {
 	return (
 		<div className='container'>
 			<Router>
-				<Navbar /> 
-				
-				
+				<Navbar />
 				<Routes>
 					<Route path='/' element={<App />} />
 					<Route index element={<Home />} />
