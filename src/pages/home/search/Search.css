@@ -7,19 +7,17 @@
     margin: 170px auto 130px;
 }
 
-.search-button{
-    width: 123px;
-    height: 71px;
-    background: #E65425;
-    padding: 27px 38px;
-    border: none;
+.search-button {
+	width: 123px;
+	height: 71px;
+	background: #e65425;
+	padding: 27px 38px;
+	border: none;
 
-    font-family: 'Inter-Regular', sans-serif;
-    font-style:normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: white;
+	font-family: 'Inter-Regular', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: white;
 }
-
-

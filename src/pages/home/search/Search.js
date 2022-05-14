@@ -5,15 +5,18 @@ import DateSearch from './searchcomps/DateSearch';
 import PassengerSearch from './searchcomps/PassengerSearch';
 
 const Search = () => {
-	return <div className='search-panel'>
+	return (
+		<div className='search-panel'>
 			<CountrySearch />
 			<CountrySearch />
 			{/* <DateSearch /> */}
 			<DateSearch />
 			<PassengerSearch />
-			<div><button className='search-button' onClick=''> Search</button></div>
+			<div>
+				<button className='search-button'>Search</button>
+			</div>
 		</div>
-	
+	);
 };
 
 export default Search;

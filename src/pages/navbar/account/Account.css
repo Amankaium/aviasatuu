@@ -1,122 +1,87 @@
-.vector {
- position: absolute;
-left: 80%;
-right: 0%;
-top: 10%;
-bottom: 0.4%;
-}
- 
-
-
-
-
-
-.modal {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0,0,0,0.4);
-    position: fixed;
-    top: 20px;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   opacity: 0;
-   pointer-events: none;
-    transition: 0.5s;
-}
- .modal.active {
-     opacity: 1;
-     pointer-events: all;
- }
-.modal__content {
-    /* padding: 20px;
-    border-radius: 12px;
-    background-color: white;
-   
-    width: 50vw;
-    height: 50vh; */ 
-    transform: scale(0.5);
-    transition: 0.4s all;
-    position: relative;
-width: 150px;
-height: 200px;
-
-background: #FFFFFF;
-border-radius: 10px;
+.accountLogo {
+	/* background-color: #4CAF50; */
+	position: absolute;
+	margin-left: 925px;
+	margin-top: 20px;
+	margin-right: 186px;
 }
 
-.modal__content.active {
-    transform: scale(1);
+/* The container <div> - needed to position the dropdown content */
+.vectorImg {
+	position: absolute;
+	display: block;
 }
 
-/* .account_menu {
-    position: relative;
-width: 150px;
-height: 200px;
+/* Dropdown Content (Hidden by Default) */
+.accountContent {
+	display: none;
+	position: absolute;
+	margin-left: 900px;
+	margin-top: 55px;
+	margin-right: 186px;
+	width: 150px;
+	height: 200px;
 
-background: #FFFFFF;
-border-radius: 10px;
-} */
+	background: #ffffff;
+	border-radius: 10px;
+	/* z-index: 1; */
+}
 
+/* Links inside the dropdown */
 .settings {
-    position: absolute;
-width: 55px;
-height: 17px;
-left: 37px;
-top: 23px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: center;
-color: #443E3E;
-text-decoration: none;
+	position: absolute;
+	width: 75px;
+	height: 17px;
+	left: 17px;
+	top: 23px;
+	/* padding: 12px 16px; */
+	/* text-decoration: none;
+    display: block; */
 }
 
 .documents {
-    position: absolute;
-width: 76px;
-height: 17px;
-left: 37px;
-top: 60px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: center;
-color: #443E3E;
-text-decoration: none;
+	position: absolute;
+	width: 96px;
+	height: 17px;
+	left: 17px;
+	top: 60px;
 }
 
 .ticket {
-position: absolute;
-width: 41px;
-height: 17px;
-left: 37px;
-top: 97px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: center;
-color: #443E3E;
-text-decoration: none;
+	position: absolute;
+	width: 61px;
+	height: 17px;
+	left: 17px;
+	top: 97px;
+}
+/* Change color of dropdown links on hover */
+.accountContent .settings.documents.ticket:hover {
+	background-color: #ddd;
 }
 
+/* Show the dropdown menu on hover */
+.vectorImg:hover .accountContent {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .vectorImg:hover .accountLogo {background-color: #3e8e41;} */
+
 .menu-btn {
-position: absolute;
-left: 10%;
-right: 10%;
-top: 70%;
-bottom: 15%;
-background: #E65425;
-border-radius: 5px;
-border: none;
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	top: 140px;
+	bottom: 15px;
+	background: #e65425;
+	border-radius: 5px;
+	border: none;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+
+	color: #ffffff;
 }
