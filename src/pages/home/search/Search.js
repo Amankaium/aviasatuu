@@ -11,7 +11,7 @@ const Search = () => {
 			<DateSearch />
 			<DateSearch />
 			<PassengerSearch />
-			<div><button className='search-button'>Search</button></div>
+			<div><button className='search-button' onClick=''> Search</button></div>
 		</div>
 	
 };
