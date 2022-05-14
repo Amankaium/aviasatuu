@@ -1,9 +1,8 @@
-// import React from 'react';
-// import PassengersList from '../../components/passengerslist/PassengersList';
-// import './Passengers.css';
+import React from 'react';
+import PassengersList from '../../components/passengerslist/PassengersList';
 
-// const Passengers = () => {
-// 	return <PassengersList />;
-// };
+const Passengers = () => {
+	return <PassengersList />;
+};
 
-// export default Passengers;
+export default Passengers;
