@@ -8,7 +8,7 @@ const Search = () => {
 	return <div className='search-panel'>
 			<CountrySearch />
 			<CountrySearch />
-			<DateSearch />
+			{/* <DateSearch /> */}
 			<DateSearch />
 			<PassengerSearch />
 			<div><button className='search-button' onClick=''> Search</button></div>
