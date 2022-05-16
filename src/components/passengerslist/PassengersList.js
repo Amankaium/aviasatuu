@@ -14,6 +14,7 @@ const PassengersList = () => {
 					<PassengersItem />
 					<PassengersItem />
 				</div>
+				<PassengersTicket />
 			</div>
 		</div>
 	);
