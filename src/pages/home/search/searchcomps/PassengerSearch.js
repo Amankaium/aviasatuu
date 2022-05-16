@@ -89,11 +89,11 @@ function Passengers(props){
 function SelectClass(){
   return(
     <div className='selectClass'> 
-    <label>
-    <input type='radio' value='Economy' name='class'className='economyclass'/> Economy
+    <label className='economyclass'>
+    <input type='radio' value='Economy' name='class'/> Economy
     </label>
-    <label>
-    <input type='radio' value='Business' name='class' className='businessclass'/> Business
+    <label className='businessclass'>
+    <input type='radio' value='Business' name='class' /> Business
     </label>
 </div>
   )
