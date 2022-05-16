@@ -1,10 +1,32 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './DateSearch.css'
+import { DateRange } from "react-date-range";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
+
+
 
 function DateSearch() {
+  const [state, setState] = useState([
+    {
+      startDate: new Date(),
+      endDate: null,
+      key: "selection"
+    }
+  ]);
   return (
-    <div><input type="date" className='whenSP'/></div>
-    )
+    <div className="App">
+      
+      <DateRange
+        onChange={item => setState([item.selection])}
+        moveRangeOnFirstSelection={false}
+        ranges={state}
+      />
+    </div>
+  );
+//   return (
+//     <div><input type="date" className='whenSP' placeholder="dd-mm-yyyy" /></div>
+//     )
 }
 
-export default DateSearch
+export default DateSearch;

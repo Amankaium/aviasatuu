@@ -9,7 +9,7 @@ const Search = () => {
 		<div className='search-panel'>
 			<CountrySearch />
 			<CountrySearch />
-			<DateSearch />
+			{/* <DateSearch /> */}
 			<DateSearch />
 			<PassengerSearch />
 			<div>

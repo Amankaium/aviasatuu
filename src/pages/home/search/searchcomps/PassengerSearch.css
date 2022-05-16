@@ -3,3 +3,108 @@
     border: none;
     height: 71px;
 }
+
+.dropdown{
+    position: relative;
+    margin-top: 1px;
+    background-color: white;
+    display: inline-block;
+    width: 221px;
+    height: 271px;
+   
+}
+
+.components{
+    margin-top: 20px;
+    display: block;
+}
+
+.passengerComponent{
+    display: flex;
+    width: 194px;
+    height: 31px;
+    align-content: center;
+    align-items: center;
+}
+
+.passengerCount{
+    display: flex;
+    width: 73px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+button{
+    border: none;
+    
+    width: 24px;
+    height: 24px;
+    
+}
+
+.form-control{
+    border: none;
+    width: 20px;
+    text-align: center;
+}
+
+.passengerItem{
+    width: 99px;
+    height: 35px;
+    margin-left: 13px;
+}
+
+.passengerCategory{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    width: 43px;
+    height: 17px;
+}
+
+.passengerCategoryInfo{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #999999;
+    display: flex;
+    height: 15px;
+    width: 99px;
+}
+
+.selectClass{
+    margin-top: 36px;
+    position: absolute;
+    width: 86px;
+    height: 18px;
+    margin-left: 13px;
+}
+
+.economyclass{
+    line-height: 17px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.businessclass{
+    margin-top: 15px;
+    line-height: 17px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+input[type='radio']{
+    width: 18px;
+}
+
+  
+ 
