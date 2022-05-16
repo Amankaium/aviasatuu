@@ -1,6 +1,7 @@
 import React from 'react';
 import './Search.css';
 import CountrySearch from './searchcomps/CountrySearch.js';
+import BasicDateRangePicker from './searchcomps/DateSearch';
 import DateSearch from './searchcomps/DateSearch';
 import PassengerSearch from './searchcomps/PassengerSearch';
 
@@ -9,8 +10,7 @@ const Search = () => {
 		<div className='search-panel'>
 			<CountrySearch />
 			<CountrySearch />
-			{/* <DateSearch /> */}
-			<DateSearch />
+			<BasicDateRangePicker />
 			<PassengerSearch />
 			<div>
 				<button className='search-button'>Search</button>

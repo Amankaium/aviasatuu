@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './PassengerSearch.css'
 import SignMinus from '../../../../assets/icons/Ellipse1.svg'
 import SignPlus from '../../../../assets/icons/Ellipse2.svg'
-
+import {Box} from '@mui/material'
 
 
 function PassengerSearch() {
@@ -41,7 +41,7 @@ function IncDecCounter(){
    return(
           <div className="passengerCount">
             <div className="passengerCount-btn">
-              <button className="btn btn-outline-primary" type="button" onClick={decNum}>
+              <button className="btn-outline-primary" type="button" onClick={decNum}>
                 <img src={SignMinus}/>
               </button>
             </div>
