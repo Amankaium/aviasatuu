@@ -1,0 +1,275 @@
+.main_conteiner {
+    display: flex;
+    justify-content: center;
+    width: 812px;
+    height: 680px;
+    margin-bottom: 20px;
+    border: 1px solid #FFFFFF;
+}
+.close {
+position: absolute;
+left: 69%;
+top: 121px;
+
+}
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    width: 812px;
+    height: 680px;
+}
+.blueSideBar {
+    position: relative;
+   width: 364px;
+   height: 680px;
+   left: 0px;
+   top: 0px;
+   background: #2E6CE7;
+   }
+
+   .blueSignUp {
+    position: absolute;
+    width: 57px;
+    height: 17px;
+    left: 154px;
+    top: 46px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .blueAviasatuu {
+    position: absolute;
+    width: 244px;
+    height: 49px;
+    left: 61px;
+    top: 274px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 49px;
+    color: #FFFFFF;
+  }
+
+  .blueLongText {
+    position: absolute;
+    width: 212px;
+    height: 54px;
+    left: 77px;
+    top: 343px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .whiteSideBar {
+    position: relative;
+    width: 430px;
+    height: 680px;
+    padding: 10px;
+    background: #FFFFFF;
+  }
+
+
+.formReg {
+    display: absolute;
+    width: 390px;
+    height: 592px;
+    margin-bottom: -5px;
+}
+
+.join_text {
+    margin: 30px;
+    margin-left: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #443E3E;
+
+}
+
+.loggmfcb {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 55px;
+    
+}
+
+.regGmail {
+position: relative;
+width: 110px;
+left:  -20px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+}
+
+.regfacebook {
+    position: relative;
+width: 138px;
+height: 17px;
+left: -15px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+}
+
+.form_input {
+    margin: 5px 52px;
+    padding-top: 5px;
+ }
+ 
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #f1f1f1;
+    border: none;
+    border-bottom: 1px solid #999999;;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #999999;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.circle_rem {
+    margin: 30px;
+    margin-top: 20px;
+}
+
+.remember {
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #999999;
+    left: 30px;
+  }
+
+  
+  .rememberMe {
+    position: relative;
+    width: 97px;
+    height: 17px;
+    left: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #999999;
+  }
+
+
+.signUpBtn {
+    position: relative;
+    width: 307px;
+height: 55px;
+    left: 20px;
+    background: #E65425;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    left: 60px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+color: #FFFFFF;
+}
+
+.signUpBtn:hover {
+    opacity: 1;
+}
+
+
+.signInAll {
+    display: flex;
+ margin: 20px;
+  justify-content: space-around;
+height: 17px;
+/* left: 30px; */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #443E3E;
+}
+    
+
+
+ .signInText {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #443E3E;
+    margin-top: 5px;
+    left: 20px;
+ }
+
+ .signinP {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #E65425;
+    margin-top: 5px;
+    left: -20px;
+ }
+
+
+
+
+  
+
+  
+
+
+  .form_input {
+     margin: 5px 52px;
+     padding-top: 5px;
+  }
+
+  
+
+
+
+  
+  

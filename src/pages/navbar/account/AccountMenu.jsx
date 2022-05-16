@@ -11,7 +11,7 @@ function AccountMenu() {
 		<div className='vectorImg'>
 			<Link to='/' className='accountLogo'>
 				<img src={Vector} alt='' />
-				Account
+
 			</Link>
 			<div className='accountContent'>
 				<Link to='/' className='settings'>
