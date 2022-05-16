@@ -1,0 +1,39 @@
+.error {
+	margin-top: 170px;
+	min-height: 100vh;
+	color: var(--light-color);
+}
+
+.error__inner {
+	position: relative;
+	margin-bottom: 280px;
+}
+
+.error__img {
+	width: 834px;
+	height: 312px;
+	background-image: url('../../assets/images/404-bg.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top right;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.error__title {
+	padding-top: 50px;
+	margin-bottom: 30px;
+}
+
+.error__btn-wrapper {
+	display: flex;
+	justify-content: center;
+}
+.error__btn {
+	padding: 10px 15px;
+	background-color: var(--accent-color);
+	color: var(--light-color);
+	border-radius: 5px;
+}
