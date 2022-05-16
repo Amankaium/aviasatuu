@@ -19,7 +19,8 @@ function App() {
 		<div className='container'>
 			<Router>
 				<Navbar /> 
-				
+				{/* <SignIn /> */}
+				{/* <SignUp /> */}
 				
 				<Routes>
 					<Route path='/' element={<App />} />
