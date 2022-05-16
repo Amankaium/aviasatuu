@@ -9,7 +9,7 @@ function DateSearch() {
   const toggling = () => setIsOpen(!isOpen);
   return (
     <div>
-      <input type='date' className='passengerSP'onClick={toggling} value={DateSearchDropdown.state}/>
+      <input type='select' className='passengerSP'onClick={toggling} value={DateSearchDropdown.state}/>
       {isOpen && (
         <DateSearchDropdown />
         )}
