@@ -41,12 +41,12 @@ const SignUp = () => {
 		</div>
 	
 		<div className='form_input'>
-		<input type="text" placeholder="Enter Your Email" name="email" required />
+		<input className='email_cl' type="text" placeholder="Enter Your Email" name="email" required />
 	
-		<input type="password" placeholder="Enter Your Password" name="psw" required />
+		<input className='password_cl' type="password" placeholder="Enter Your Password" name="psw" required />
 	
 	
-		<input type="password" placeholder="Repeat Your Password" name="psw-repeat" required />
+		<input className='password_cl' type="password" placeholder="Repeat Your Password" name="psw-repeat" required />
 	
 		</div>
 	<div className='circle_rem'>	
