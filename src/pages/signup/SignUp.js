@@ -12,10 +12,10 @@ const SignUp = () => {
 	<div class="conteiner">
 		<div className='blueSideBar'>
 			<div className='blueSignUp'>
-				<Link to='/'>Sign Up</Link>
+				<Link to='/'>SIGN UP</Link>
 			</div>
 		<div className='blueAviasatuu'>
-			<Link to='/'>AVIASATUU</Link>
+			<Link to='/'>AviaSatuu</Link>
 		</div>
 		<div className='blueLongText'>
 			<Link to='/'>Access to support and pricing subscriptions</Link>
@@ -60,7 +60,7 @@ const SignUp = () => {
 
 		<div className='signInAll'>
 		  <div className='signInText'>Already have an account?</div>
-		 <div className='signinP'><Link to="/">Sign in</Link></div>
+		 <div className='signinP'><Link to="/">Sign In</Link></div>
 		
 		</div>
 	</form>

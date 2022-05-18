@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './PassengerSearch.css'
 import SignMinus from '../../../../assets/icons/Ellipse1.svg'
 import SignPlus from '../../../../assets/icons/Ellipse2.svg'
-import {Box} from '@mui/material'
+// import {Box} from '@mui/material'
 
 
 function PassengerSearch() {
