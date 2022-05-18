@@ -20,7 +20,7 @@ function App() {
 					<Route index element={<Home />} />
 					<Route path='flights' element={<Flights />} />
 					<Route path='passengers' element={<Passengers />} />
-					<Route path='checkout' element={<CheckoutPage />} />
+					<Route path='/checkout' element={<CheckoutPage />} />
 					<Route path='signin' element={<SignIn />} />
 					<Route path='signup' element={<SignUp />} />
 					<Route path='*' element={<Error />} />
