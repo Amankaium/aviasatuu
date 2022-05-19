@@ -10,12 +10,12 @@ import BgImg from '../../assets/images/picture.jpg';
 
 const CheckoutPage = () => {
 	return (
-		<div>
-			<div class="wrapper">
-				<div class="payment_form">
+		<div className='checkout_content'>
+			<div className="checkout__wrapper">
+				<div className="payment_form">
 					<h1>Payment by credit card</h1>
-					<div class="payment_form_content_wrapper">
-						<form class="payment_form_content">
+					<div className="payment_form_content_wrapper">
+						<form className="payment_form_content">
 							<ul>
 								<li>
 									<div className='field-credit_card'>

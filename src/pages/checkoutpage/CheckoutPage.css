@@ -1,10 +1,10 @@
-body{
+.checkout_content{
     background-color: #2E6CE7;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.wrapper{
+.checkout__wrapper{
     width:  1096px;
     height: 651px;
     display: flex;
@@ -43,7 +43,6 @@ body{
 	/* padding-left: 11px; */
 	margin-bottom: 20px;
 }
-
 .field-cvc input{
 	width: 138px;
 	height: 34px;
