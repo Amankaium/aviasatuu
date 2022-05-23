@@ -37,7 +37,7 @@
 	margin-right: 30px;
 }
 
-input[type='date']::-webkit-calendar-picker-indicator {
+.description__date input[type='date']::-webkit-calendar-picker-indicator {
 	color: var(--light-color);
 	opacity: 0;
 }
