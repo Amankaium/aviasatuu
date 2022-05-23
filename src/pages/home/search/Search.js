@@ -10,7 +10,8 @@ const Search = () => {
 		<div className='search-panel'>
 			<CountrySearch />
 			<CountrySearch />
-			<BasicDateRangePicker />
+			<DateSearch />
+			<DateSearch />
 			<PassengerSearch />
 			<div>
 				<button className='search-button'>Search</button>

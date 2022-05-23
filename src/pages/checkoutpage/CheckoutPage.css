@@ -1,0 +1,176 @@
+.checkout_content{
+    background-color: #2E6CE7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkout__wrapper{
+    width:  1096px;
+    height: 651px;
+    display: flex;
+}
+/* ///////////////начало payment_form///////////////////// */
+.payment_form{
+    width: 50%;
+	display: block;
+    background-color: #fff;
+
+}
+.payment_form h1{
+    font-size: 32px;
+    font-weight: 700px;
+    line-height: 48px;
+    color: #443E3E;
+    display: flex;
+    justify-content: center;
+	padding-top: 51px;
+	padding-bottom: 50px;
+}
+.payment_form_content_wrapper{
+    width: 548px;
+	height: 651px;
+	display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+
+
+.field-credit_card input{
+	width: 287px;
+	height: 34px;
+	margin-right: 21px;
+	/* padding-left: 11px; */
+	margin-bottom: 20px;
+}
+.field-cvc input{
+	width: 138px;
+	height: 34px;
+	/* padding-left: 11px; */
+	margin-bottom: 20px;
+}
+.field-month select{
+	width: 212px;
+	height: 34px;
+	margin-right: 21px;
+	/* padding-left: 11px; */
+	margin-bottom: 20px;
+    outline: none;
+    color: #878d8d;
+	border: 1px solid #999999;
+    padding-left: 4px;
+}
+.field-year input{
+	width: 211px;
+	height: 34px;
+	/* padding-left: 11px; */
+	margin-bottom: 20px;
+}
+.field-card_holder input{
+	width: 442px;
+	height: 34px;
+	/* padding-left: 11px; */
+	margin-bottom: 40px;
+}
+.email input{
+    width: 442px;
+	height: 34px;
+	/* padding-left: 11px; */
+    margin-bottom: 20px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+.checkbox h6{
+    padding-left: 6px;
+    color: #999999;
+}
+.checkbox input{
+    color: #999999;
+}
+.payment_form_content ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	width: 448px;
+}
+.payment_form_content ul li{
+	display: flex;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.payment_form_content label{
+	color: #999999;
+	font-size: 12px;
+}
+.payment_form_content ul li .field-style{
+	/* box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;  */
+	padding: 8px;
+	outline: none;
+	border: 1px solid #999999;
+	/* -webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out; */
+}
+.payment_form_content ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+
+/* .payment_form_contentul li input.align-left{
+	float:left;
+} */
+/* .payment_form_content ul li input.align-right{
+	float:right;
+} */
+
+
+.payment_form_content ul li input[type="submit"]{
+	width: 123px;
+	height: 36px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #d64f22	;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #d64f22;
+	box-shadow: inset 0px 1px 0px 0px #d64f22;
+	background-color: #E65425;
+	border: 1px solid #d14b1e;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.payment_form_content ul li .btn{
+    background-color: white !important;
+    color: #e65425 !important;
+    width: 123px;
+	height: 36px;
+	border: 1px solid #d14b1e;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+    margin-right: 14px;
+} 
+.payment_form_content ul li input[type="submit"]:hover{
+	background: linear-gradient(to bottom, #d64f22 5%, #d64f22 100%);
+	background-color: #d64f22;
+}
+/* .payment_form_content ul li input[type="url"]:hover{
+    background: linear-gradient(to bottom, #d64f22 5%, #d64f22 100%);
+    color: white !important;
+} */
+
+
+/* ///////////////конец payment_form ////////////////*/
+/* ////////////начало payment_picture/////////////////// */
+/* ////////////конрец payment_picture/////////////////// */

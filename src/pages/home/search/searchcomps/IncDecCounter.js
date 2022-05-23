@@ -1,25 +1,25 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import SignMinus from '../../../../assets/icons/Ellipse1.svg'
 import SignPlus from '../../../../assets/icons/Ellipse2.svg'
 
-function IncDecCounter(){
-    let [num, setNum]= useState(0);
-    let incNum =()=>{
-      if(num<10)
+function IncDecCounter({value, onChange, name}){
+    
+    const incNum =()=>{
+      if(value<10)
       {
-      setNum(Number(num)+1);
+      onChange(Number(value)+1, name);
       }
     };
-    let decNum = () => {
-       if(num>0)
+    const decNum = () => {
+       if(value>0)
        {
-        setNum(num - 1);
+        onChange(value - 1, name);
        }
     }
-   let handleChange = (e)=>{
-     setNum(e.target.value);
+   const handleChange = (e)=>{
+     onChange(e.target.value, e.target.name)
     }
-  
+    
      return(
             <div className="passengerCount">
               <div className="passengerCount-btn">
@@ -27,7 +27,7 @@ function IncDecCounter(){
                   <img src={SignMinus}/>
                 </button>
               </div>
-              <input type="number" className="form-control" value={num} onChange={handleChange}/>
+              <input type="number" className="form-control" name={name} value={value} onChange={handleChange}/>
               <div className="passengerCount-btn">
                 <button className="btn btn-outline-primary" type="button" onClick={incNum}>
                   <img src={SignPlus}/>

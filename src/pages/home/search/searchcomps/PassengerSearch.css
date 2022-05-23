@@ -13,7 +13,7 @@
     position: relative;
     margin-top: 1px;
     background-color: white;
-    display: inline-block;
+    display: table;
     width: 221px;
     height: 271px;
    
@@ -108,9 +108,7 @@
     font-size: 14px;
 }
 
-input[type='radio']{
-    width: 18px;
-}
+
 
   
  
