@@ -23,7 +23,7 @@ const FlightsList = () => {
 				</header>
 
 				<div className='description'>
-					<div className='description__input'>
+					<div className='description__input description__item'>
 						<label className='desctiption__date-label' htmlFor='date'>
 							<img
 								className='description__date-img'
@@ -38,9 +38,17 @@ const FlightsList = () => {
 							id='date'
 						/>
 					</div>
-					<p className='text description__text'>One-way</p>
-					<p className='text description__text'>2 adult - 2 children</p>
-					<p className='text description__text'>Economy</p>
+					<p className='text description__text description__item'>One-way</p>
+					<p className='text description__text description__item'>
+						2 adult - 2 children
+					</p>
+					<p className='text description__text description__item'>Economy</p>
+					<select className='flights-variants__select text description__item'>
+						<option value=''>Sort by price</option>
+						<option value='recommended'>Recommended first</option>
+						<option value='cheap'>Cheap first</option>
+						<option value='popular'>Popular</option>
+					</select>
 				</div>
 
 				<div className='flights-variants'>
@@ -51,14 +59,6 @@ const FlightsList = () => {
 							<li className='flights-variants__item caption-text'>On way</li>
 							<li className='flights-variants__item caption-text'>Airlines</li>
 							<li className='flights-variants__item caption-text'>Price</li>
-							<li className='flights-variants__item caption-text'>
-								<select className='flights-variants__select'>
-									<option value=''>Sort by price</option>
-									<option value='recommended'>Recommended first</option>
-									<option value='cheap'>Cheap first</option>
-									<option value='popular'>Popular</option>
-								</select>
-							</li>
 						</ul>
 					</div>
 				</div>

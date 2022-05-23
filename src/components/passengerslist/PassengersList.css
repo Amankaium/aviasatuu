@@ -11,3 +11,14 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+@media (max-width: 1160px) {
+	.passengersItem-wrapper {
+		justify-content: center;
+	}
+}
+@media (max-width: 340px) {
+	.passengers__title {
+		font-size: 44px;
+	}
+}
