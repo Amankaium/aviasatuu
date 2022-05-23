@@ -1,5 +1,5 @@
 import React from 'react';
-import arrowDown from '../../assets/icons/arrow-down-icon.svg';
+
 import './PassengersItem.css';
 
 const PassengersItem = () => {
@@ -55,13 +55,6 @@ const PassengersItem = () => {
 						name='date'
 						id='date'
 					/>
-					<span className='input__date-btn'>
-						<img
-							className='description__date-img'
-							src={arrowDown}
-							alt='icon to view calendar'
-						/>
-					</span>
 				</div>
 
 				<div className='form__input-inner'>
