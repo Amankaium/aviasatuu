@@ -1,6 +1,7 @@
 .flightsItem__inner {
 	padding: 45px 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	background-color: var(--light-color);
@@ -45,4 +46,10 @@
 }
 .fligthsItem-btn:hover {
 	background-color: var(--hover-color);
+}
+
+@media (max-width: 800px) {
+	.flightsItem__inner-element {
+		margin: 15px 30px;
+	}
 }
