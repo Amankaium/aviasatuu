@@ -4,6 +4,7 @@
 .flights-header {
 	margin-top: 90px;
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 50px;
 }
 .flights__title {
@@ -21,13 +22,19 @@
 }
 
 .description {
+	margin: 0 auto 30px;
 	display: flex;
-	max-width: 830px;
-	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
+	flex-wrap: wrap;
 	color: var(--light-color);
-	margin-bottom: 30px;
+}
+
+.description__item {
+	margin-bottom: 15px;
+}
+.description__item:not(:last-child) {
+	margin-right: 30px;
 }
 
 input[type='date']::-webkit-calendar-picker-indicator {
@@ -78,9 +85,6 @@ input[type='date']::-webkit-calendar-picker-indicator {
 	margin-right: 120px;
 }
 .flights-variants__select {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 17px;
 	color: var(--light-color);
 	border: none;
 	background-color: transparent;
@@ -90,4 +94,21 @@ input[type='date']::-webkit-calendar-picker-indicator {
 	background-color: transparent;
 	color: var(--dark-color);
 	padding: 15px 10px;
+}
+
+@media (max-width: 970px) {
+	.flights-variants__list {
+		display: none;
+	}
+}
+@media (max-width: 600px) {
+	.flights__title {
+		margin-bottom: 50px;
+	}
+	.flights__title:not(:last-child) {
+		margin-right: 30px;
+	}
+	.flights-header__img {
+		display: none;
+	}
 }
