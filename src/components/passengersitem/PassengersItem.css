@@ -49,9 +49,3 @@
 .gender__select {
 	padding: 10px 10px;
 }
-.input__date-btn {
-	position: absolute;
-	z-index: 1;
-	left: 70px;
-	top: 50%;
-}

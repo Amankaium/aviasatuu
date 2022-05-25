@@ -1,17 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Search.css';
-import CountrySearch from './searchcomps/CountrySearch.js';
-import BasicDateRangePicker from './searchcomps/DateSearch';
-import DateSearch from './searchcomps/DateSearch';
-import PassengerSearch from './searchcomps/PassengerSearch';
+import CountriesSearch from './searchcomps/countriesSearch/CountriesSearch';
+import DatesSearch from './searchcomps/datesSearch/DatesSearch';
+import PassengerSearch from './searchcomps/passengerSearch/PassengerSearch';
 
 const Search = () => {
+	
 	return (
 		<div className='search-panel'>
-			<CountrySearch />
-			<CountrySearch />
-			<DateSearch />
-			<DateSearch />
+			<CountriesSearch />
+			<DatesSearch />
 			<PassengerSearch />
 			<div>
 				<button className='search-button'>Search</button>

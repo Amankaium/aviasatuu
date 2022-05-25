@@ -1,0 +1,42 @@
+.whenSP{
+    width: 156px;
+    height: 71px;
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    color: #443E3E;
+    text-align: center;
+    
+}
+.whenSP::-webkit-calendar-picker-indicator {
+    margin-right: 10px;
+    background: url(../../../../../assets/icons/calendar-icon.svg) no-repeat center;
+    background-size: contain;
+  }
+
+.datesSearch{
+      display: flex;
+      gap: 1px;
+      display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1130px) {
+	.datesSearch{
+		justify-content: center;
+	}
+    .whenSP{
+        width: 40em;
+    }
+
+}
+@media (max-width: 600px) {
+	.whenSP{
+        width: 30em;
+    }
+}
+@media (max-width: 450px) {
+    .whenSP{
+        width: 20em;
+    }
+}

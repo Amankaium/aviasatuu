@@ -1,0 +1,42 @@
+
+
+.countrySearch{
+    width: 217px;
+    height: 71px;
+    background: #FFFFFF;
+    border: none;
+    padding: 27px 30px;
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.countries{
+    display: flex;
+    gap: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1130px) {
+	.countries{
+		justify-content: center;
+	}
+    .countrySearch{
+        width: 40em;
+       
+    }
+}
+@media (max-width: 600px) {
+	.countrySearch{
+        width: 30em;
+    }
+}
+@media (max-width: 450px) {
+    .countrySearch{
+        width: 20em;
+    }
+}
+

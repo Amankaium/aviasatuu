@@ -53,3 +53,15 @@
 		margin: 15px 30px;
 	}
 }
+@media (max-width: 460px) {
+	.flightsItem__inner {
+		display: block;
+		text-align: center;
+	}
+	.flightsItem__times {
+		justify-content: center;
+	}
+	.flightsItem__inner-element {
+		margin: 20px 0;
+	}
+}

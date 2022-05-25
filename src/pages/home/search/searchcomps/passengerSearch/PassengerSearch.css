@@ -6,6 +6,7 @@
     font-size: 14px;
     line-height: 17px;
     padding: 27px 29px;
+    text-align: center;
 
 }
 
@@ -88,7 +89,6 @@
 .selectClass{
     margin-top: 36px;
     position: absolute;
-    width: 86px;
     height: 18px;
     margin-left: 13px;
 }
@@ -98,6 +98,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    width: 86px;
 }
 
 .businessclass{
@@ -106,9 +107,54 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    width: 86px;
 }
 
 
 
-  
+@media (max-width: 1130px) {
+	.passengerSP{
+		justify-content: center;
+        width: 40em;
+        
+	}
+    .dropdown{
+        width: 31em;
+    }
+    .components{
+        padding-left: 10em;
+    }
+    .selectClass{
+        padding-left: 10em;
+    }
+
+}
+@media (max-width: 600px) {
+    .passengerSP{
+		justify-content: center;
+        width: 30em;
+        
+	}
+    .dropdown{
+        width: 23em;
+    }
+    .components{
+        padding-left: 5em;
+    }
+    .selectClass{
+        padding-left: 5em;
+    }
+	
+}
+@media (max-width: 450px) {
+    .passengerSP{
+        width: 20em;
+    }
+    .dropdown{
+        width: 15.5em;
+    }
+    .components{
+        padding-left: 0;
+    }
+}
  

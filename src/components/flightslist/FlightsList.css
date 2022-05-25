@@ -37,7 +37,7 @@
 	margin-right: 30px;
 }
 
-input[type='date']::-webkit-calendar-picker-indicator {
+.description__date input[type='date']::-webkit-calendar-picker-indicator {
 	color: var(--light-color);
 	opacity: 0;
 }
@@ -110,5 +110,14 @@ input[type='date']::-webkit-calendar-picker-indicator {
 	}
 	.flights-header__img {
 		display: none;
+	}
+}
+@media (max-width: 350px) {
+	.description {
+		display: block;
+		text-align: center;
+	}
+	.description__item:not(:last-child) {
+		margin-right: 0;
 	}
 }
