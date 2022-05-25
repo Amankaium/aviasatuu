@@ -4,15 +4,23 @@ import { Link } from 'react-router-dom';
 import gmail_logo from '../../assets/icons/gmail_logo.svg';
 import fb_logo from '../../assets/icons/fb_logo.svg';
 import close from '../../assets/icons/close.svg';
+
+
+
+
+
+
+
+
 const SignUp = () => {
 	return (
 
 		<div className='main_conteiner'>
-				<div className='close'><img src={close} alt='close'></img></div>	
+				<div className='close' ><img src={close} alt='close'></img></div>	
 	<div class="conteiner">
 		<div className='blueSideBar'>
 			<div className='blueSignUp'>
-				<Link to='/'>SIGN UP</Link>
+				<Link to='../../signup'>SIGN UP</Link>
 			</div>
 		<div className='blueAviasatuu'>
 			<Link to='/'>AviaSatuu</Link>
@@ -41,7 +49,7 @@ const SignUp = () => {
 		</div>
 	
 		<div className='form_input'>
-		<input className='email_cl' type="text" placeholder="Enter Your Email" name="email" required />
+		<input className='email_cl' type="text" placeholder="Enter Your Email" name="email"  required />
 	
 		<input className='password_cl' type="password" placeholder="Enter Your Password" name="psw" required />
 	
@@ -52,6 +60,9 @@ const SignUp = () => {
 	<div className='circle_rem'>	
     <label >
       <input type="checkbox" className='remember' name='remember' />
+		
+
+
 	  <span className='rememberMe'>Remember me</span>
     </label>
   </div>
@@ -60,7 +71,7 @@ const SignUp = () => {
 
 		<div className='signInAll'>
 		  <div className='signInText'>Already have an account?</div>
-		 <div className='signinP'><Link to="/">Sign In</Link></div>
+		 <div className='signinP'><Link to='../../signin'>Sign In</Link></div>
 		
 		</div>
 	</form>
