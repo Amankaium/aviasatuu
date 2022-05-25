@@ -1,10 +1,11 @@
 import React from 'react'
-import './DateSearch.css'
+import './DatesSearch.css'
 
-function DateSearch() {
+
+function When() {
   return (
     <div><input type="date" placeholder='dd-mm'  className='whenSP'/></div>
-    )
+  )
 }
 
-export default DateSearch
+export default When

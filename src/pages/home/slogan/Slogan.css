@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .slogan-content{
@@ -32,4 +33,24 @@ background: url(../../../assets/images/plane.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+}
+
+@media (max-width: 1130px) {
+	.slogan{
+		justify-content: center;
+	}
+}
+@media (max-width: 600px) {
+	.slogan-title{
+        font-size: 34px;
+    }
+    .slogan-text{
+        font-size: 14px;
+    }
+    .slogan-content{
+        width: 400px;
+    }
+    .plane-img{
+        width: 400px;
+    }
 }

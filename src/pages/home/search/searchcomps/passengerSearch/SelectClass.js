@@ -8,12 +8,16 @@ function SelectClass({onChange, name}){
   }
     return(
       <div className='selectClass'> 
+      <div>
       <label className='economyclass'>
       <input type='radio' value='Economy' name='class' onChange={handleChange} /> Economy
       </label>
+      </div>
+      <div>
       <label className='businessclass'>
       <input type='radio' value='Business' name='class' onChange={handleChange} /> Business
       </label>
+      </div>
   </div>
     )
   }

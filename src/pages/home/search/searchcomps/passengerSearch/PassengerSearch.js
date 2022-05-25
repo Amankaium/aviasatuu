@@ -24,7 +24,7 @@ function PassengerSearch() {
         <AdultCategory  value={state.adults} name={"adults"} onChange={handleChange}/>
         <ChildrenCategory value={state.children} name={"children"} onChange={handleChange}/>
         <BabiesCategory value={state.babies} name={"babies"} onChange={handleChange}/>
-        <SelectClass onChange={handleChange} name='class'/>
+        <SelectClass onChange={handleChange}  name='class'/>
         </div>
         )}
     </div>

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import SignMinus from '../../../../assets/icons/Ellipse1.svg'
-import SignPlus from '../../../../assets/icons/Ellipse2.svg'
+import SignMinus from '../../../../../assets/icons/Ellipse1.svg'
+import SignPlus from '../../../../../assets/icons/Ellipse2.svg'
 
 function IncDecCounter({value, onChange, name}){
     

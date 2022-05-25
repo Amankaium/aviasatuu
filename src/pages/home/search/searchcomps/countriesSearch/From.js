@@ -3,10 +3,10 @@ import './CountrySearch.css'
 
 
 function CountrySearch() {
-    
+   
   return (
     <div>
-        <div><input type='search' className='countrySearch'  /></div>
+        <div><input value={'From'} type='search' className='countrySearch' /></div>
     </div>
   )
 }
