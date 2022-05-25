@@ -13,7 +13,7 @@ const SignIn = () => {
 	<div class="wrapper">
 		<div className='lightBlueSideBar'>
 			<div className='lightBlueSignIn'>
-				<Link to='/'>SIGN IN</Link>
+				<Link to='../../signin'>SIGN IN</Link>
 			</div>
 		<div className='lightBlueAviasatuu'>
 			<Link to='/'>AviaSatuu</Link>
@@ -56,7 +56,7 @@ const SignIn = () => {
 
 		<div className='signUpAll'>
 		  <div className='signUpText'>Don’t have an account?</div>
-		 <div className='signUpP'><Link to="/">Sign Up</Link></div>
+		 <div className='signUpP'><Link to='../../signup'>Sign Up</Link></div>
 		
 		</div>
 	</form>
