@@ -1,16 +1,18 @@
 import React, {useState} from 'react'
-import From from './From'
-import Where from './Where'
+import FromToCountry from './FromToCountry'
 import './CountrySearch.css'
 
 
 
-function CountriesSearch() {
-  
+function CountriesSearch({citiesFrom, citiesTo, handleFilters}) {
+  const handleOnChange = (value) => {
+    handleFilters(value)
+  }
+
   return (
     <div className='countries'>
-        <From />
-        <Where />
+        <FromToCountry name={'from_city'} placeholder={'From'} handleOnChange={handleOnChange} cities={citiesFrom} />
+        <FromToCountry name={'to_city'} placeholder={'To'} handleOnChange={handleOnChange} cities={citiesTo} />
     </div>
   )
 }

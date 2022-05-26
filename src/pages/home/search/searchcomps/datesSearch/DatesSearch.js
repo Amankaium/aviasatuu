@@ -3,11 +3,15 @@ import './DatesSearch.css'
 import When from './When'
 import Back from './Back'
 
-function DatesSearch() {
+function DatesSearch({ handleFilters }) {
+  const handleOnDateChange = (data) => {
+    handleFilters(data)
+  }
+
   return (
     <div className='datesSearch'>
-      <When />
-      <Back />
+      <When handleOnDateChange={handleOnDateChange} />
+      <Back handleOnDateChange={handleOnDateChange}/>
     </div>
     )
 }

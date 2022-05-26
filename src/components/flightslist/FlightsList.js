@@ -4,7 +4,7 @@ import arrowDownCalendar from '../../assets/icons/arrow-down-calendar.svg';
 import FlightsItem from '../flightsitem/FlightsItem';
 import './FlightsList.css';
 
-const FlightsList = () => {
+const FlightsList = ({flights}) => {
 	return (
 		<div className='container'>
 			<div className='flightsList-inner'>
@@ -62,12 +62,11 @@ const FlightsList = () => {
 						</ul>
 					</div>
 				</div>
-
+				{
+				flights && flights.map(flight => 
 				<FlightsItem />
-				<FlightsItem />
-				<FlightsItem />
-				<FlightsItem />
-				<FlightsItem />
+			)
+				}
 			</div>
 		</div>
 	);
