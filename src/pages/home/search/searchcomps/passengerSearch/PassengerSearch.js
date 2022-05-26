@@ -3,7 +3,7 @@ import './PassengerSearch.css'
 import SelectClass from './SelectClass'
 import IncDecCounter from './IncDecCounter'
 
-function PassengerSearch() {
+function PassengerSearch({ handleAddData }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggling = () => setIsOpen(!isOpen);
   const [state, setState] = useState({
@@ -13,8 +13,10 @@ function PassengerSearch() {
     class: 'Economy'
   })
   const handleChange = (value, name)=>{
+    handleAddData({ [name]: value })
     setState({...state, [name]:value})
   }
+
   const passCount = useMemo(()=>{return state.adults+ state.children + state.babies}, [state])
   return (
     <div>
@@ -24,7 +26,7 @@ function PassengerSearch() {
         <AdultCategory  value={state.adults} name={"adults"} onChange={handleChange}/>
         <ChildrenCategory value={state.children} name={"children"} onChange={handleChange}/>
         <BabiesCategory value={state.babies} name={"babies"} onChange={handleChange}/>
-        <SelectClass onChange={handleChange}  name='class'/>
+        <SelectClass value={state.class} onChange={handleChange}  name='class'/>
         </div>
         )}
     </div>

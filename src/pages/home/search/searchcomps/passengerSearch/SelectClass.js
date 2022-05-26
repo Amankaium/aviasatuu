@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import './PassengerSearch.css'
 
-function SelectClass({onChange, name}){
+function SelectClass({onChange, name, value}){
   
   const handleChange = (e) =>{
     onChange(e.target.value, name)
@@ -10,12 +10,12 @@ function SelectClass({onChange, name}){
       <div className='selectClass'> 
       <div>
       <label className='economyclass'>
-      <input type='radio' value='Economy' name='class' onChange={handleChange} /> Economy
+      <input type='radio' value='Economy' checked={value === 'Economy'} name='class' onChange={handleChange} /> Economy
       </label>
       </div>
       <div>
       <label className='businessclass'>
-      <input type='radio' value='Business' name='class' onChange={handleChange} /> Business
+      <input type='radio' value='Business' checked={value === 'Business'} name='class' onChange={handleChange} /> Business
       </label>
       </div>
   </div>
