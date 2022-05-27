@@ -35,14 +35,9 @@ const Search = () => {
 			});
 	};
 	const goToFlights = () => {
-		if (
-			!filter.from_city ||
-			!filter.to_city ||
-			!filter.start ||
-			!filter.end ||
-			!additionalData.adults
-		) {
-			setError('');
+		if (!filter.from_city || !filter.to_city || !filter.start || !filter.end ||
+			!additionalData.adults) {
+			setError(' *Please, fill in all input fields ')
 			return;
 		}
 		navigate('/flights', { state: { filter, additionalData } });
@@ -60,20 +55,16 @@ const Search = () => {
 	console.log(filter);
 
 	return (
-		<div className='search-panel'>
-			<CountriesSearch
-				handleFilters={handleFilters}
-				citiesFrom={citiesFrom}
-				citiesTo={citiesTo}
-			/>
+		<div className='search__panel'>
+			<CountriesSearch handleFilters={handleFilters} citiesFrom={citiesFrom} citiesTo={citiesTo} />
 			<DatesSearch handleFilters={handleFilters} />
 			<PassengerSearch handleAddData={handleAddData} />
 			<div>
-				<button onClick={goToFlights} className='search-button'>
-					Search
-				</button>
+				<button 
+				onClick={goToFlights}
+				className='search__button'>Search</button>
 			</div>
-			{error && <div>{error}</div>}
+			{error && <div className='error__fill'>{error}</div>}
 		</div>
 	);
 };

@@ -1,4 +1,4 @@
-.whenSP{
+.datesSearch__input{
     width: 156px;
     height: 71px;
     border: none;
@@ -8,7 +8,7 @@
     text-align: center;
     
 }
-.whenSP::-webkit-calendar-picker-indicator {
+.datesSearch__input::-webkit-calendar-picker-indicator {
     margin-right: 10px;
     background: url(../../../../../assets/icons/calendar-icon.svg) no-repeat center;
     background-size: contain;
@@ -25,18 +25,18 @@
 	.datesSearch{
 		justify-content: center;
 	}
-    .whenSP{
+    .datesSearch__input{
         width: 40em;
     }
 
 }
 @media (max-width: 600px) {
-	.whenSP{
+	.datesSearch__input{
         width: 30em;
     }
 }
 @media (max-width: 450px) {
-    .whenSP{
+    .datesSearch__input{
         width: 20em;
     }
 }

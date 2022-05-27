@@ -5,11 +5,11 @@
     flex-wrap: wrap;
 }
 
-.slogan-content{
+.slogan__content{
     width: 520px;
 }
 
-.slogan-title{
+.slogan__title{
     margin-bottom: 30px;
     font-style: normal;
     font-weight: 800;
@@ -18,7 +18,7 @@
     color: #FFFFFF;
 }
 
-.slogan-text{
+.slogan__text{
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -26,13 +26,22 @@
     color: #FFFFFF;
 }
 
-.plane-img{
+.plane__img{
 width: 578px;
 height: 205px;
 background: url(../../../assets/images/plane.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+--webkit-animation: movingplane 10s linear infinite;
+}
+@-webkit-keyframes movingplane{
+    0% {
+        -webkit-transform:  translate(100%,-20px)  rotate(0deg) ;
+    }
+    100% {
+        -webkit-transform:  translate(100%,-20px)  rotate(0deg) ;
+    }
 }
 
 @media (max-width: 1130px) {
@@ -41,16 +50,16 @@ background-position: center;
 	}
 }
 @media (max-width: 600px) {
-	.slogan-title{
+	.slogan__title{
         font-size: 34px;
     }
-    .slogan-text{
+    .slogan__text{
         font-size: 14px;
     }
-    .slogan-content{
+    .slogan__content{
         width: 400px;
     }
-    .plane-img{
+    .plane__img{
         width: 400px;
     }
 }

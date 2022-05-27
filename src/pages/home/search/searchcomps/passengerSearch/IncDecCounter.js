@@ -21,13 +21,13 @@ function IncDecCounter({value, onChange, name}){
     }
     
      return(
-            <div className="passengerCount">
+            <div className="incDecCounter__passengerCount">
               <div className="passengerCount-btn">
                 <button className="btn-outline-primary" type="button" onClick={decNum}>
                   <img src={SignMinus}/>
                 </button>
               </div>
-              <input type="number" className="form-control" name={name} value={value} onChange={handleChange}/>
+              <input type="number" className="incDecCounter__form-control" name={name} value={value} onChange={handleChange}/>
               <div className="passengerCount-btn">
                 <button className="btn btn-outline-primary" type="button" onClick={incNum}>
                   <img src={SignPlus}/>

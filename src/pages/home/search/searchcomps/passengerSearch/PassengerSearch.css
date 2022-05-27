@@ -1,4 +1,4 @@
-.passengerSP{
+.passengerSearch{
     width: 221px;
     border: none;
     height: 71px;
@@ -10,7 +10,7 @@
 
 }
 
-.dropdown{
+.passengerSearch__dropdown{
     position: relative;
     margin-top: 1px;
     background-color: white;
@@ -20,12 +20,12 @@
    
 }
 
-.components{
+.passengerSearch__components{
     margin-top: 20px;
     display: block;
 }
 
-.passengerComponent{
+.passengerSearch__passengerComponent{
     display: flex;
     width: 194px;
     height: 31px;
@@ -33,7 +33,7 @@
     align-items: center;
 }
 
-.passengerCount{
+.incDecCounter__passengerCount{
     display: flex;
     width: 73px;
     height: 24px;
@@ -48,7 +48,7 @@
     
 }
 
-.form-control{
+.incDecCounter__form-control{
     border: none;
     width: 20px;
     text-align: center;
@@ -59,13 +59,13 @@
     margin: 0;
 }
 
-.passengerItem{
+.passengerSearch__passengerItem{
     width: 99px;
     height: 35px;
     margin-left: 13px;
 }
 
-.passengerCategory{
+.passengerSearch__passengerCategory{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -75,7 +75,7 @@
     height: 17px;
 }
 
-.passengerCategoryInfo{
+.passengerSearch__passengerCategoryInfo{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -93,7 +93,7 @@
     margin-left: 13px;
 }
 
-.economyclass{
+.selectClass__economyclass{
     line-height: 17px;
     font-style: normal;
     font-weight: 400;
@@ -101,7 +101,7 @@
     width: 86px;
 }
 
-.businessclass{
+.selectClass__businessclass{
     margin-top: 15px;
     line-height: 17px;
     font-style: normal;
@@ -113,15 +113,15 @@
 
 
 @media (max-width: 1130px) {
-	.passengerSP{
+	.passengerSearch{
 		justify-content: center;
         width: 40em;
         
 	}
-    .dropdown{
+    .passengerSearch__dropdown{
         width: 31em;
     }
-    .components{
+    .passengerSearch__components{
         padding-left: 10em;
     }
     .selectClass{
@@ -130,15 +130,15 @@
 
 }
 @media (max-width: 600px) {
-    .passengerSP{
+    .passengerSearch{
 		justify-content: center;
         width: 30em;
         
 	}
-    .dropdown{
+    .passengerSearch__dropdown{
         width: 23em;
     }
-    .components{
+    .passengerSearch__components{
         padding-left: 5em;
     }
     .selectClass{
@@ -147,13 +147,13 @@
 	
 }
 @media (max-width: 450px) {
-    .passengerSP{
+    .passengerSearch{
         width: 20em;
     }
-    .dropdown{
+    .passengerSearch__dropdown{
         width: 15.5em;
     }
-    .components{
+    .passengerSearch__components{
         padding-left: 0;
     }
 }
