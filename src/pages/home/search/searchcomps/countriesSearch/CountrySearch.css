@@ -1,6 +1,6 @@
 
 
-.countrySearch{
+.fromToCountry__countrySearch{
     width: 217px;
     height: 71px;
     background: #FFFFFF;
@@ -13,29 +13,35 @@
 
 }
 
-.countries{
+.countriesSearch__fromto{
     display: flex;
     gap: 1px;
     display: flex;
     flex-wrap: wrap;
 }
 
+select.fromToCountry__countrySearch{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+ }
+
 @media (max-width: 1130px) {
-	.countries{
+	.countriesSearch__fromto{
 		justify-content: center;
 	}
-    .countrySearch{
+    .fromToCountry__countrySearch{
         width: 40em;
        
     }
 }
 @media (max-width: 600px) {
-	.countrySearch{
+	.fromToCountry__countrySearch{
         width: 30em;
     }
 }
 @media (max-width: 450px) {
-    .countrySearch{
+    .fromToCountry__countrySearch{
         width: 20em;
     }
 }

@@ -6,6 +6,7 @@ import ticket from '../../../assets/icons/ticket.svg';
 import { Link } from 'react-router-dom';
 import './Account.css';
 
+
 function AccountMenu() {
 	return (
 		<div className='vectorImg'>
@@ -25,7 +26,7 @@ function AccountMenu() {
 					{' '}
 					<img src={ticket} alt='' />
 				</Link>
-				<Link to='/'>
+				<Link to='../../signup'>
 					<button className='menu-btn'>Sign In</button>
 				</Link>
 			</div>

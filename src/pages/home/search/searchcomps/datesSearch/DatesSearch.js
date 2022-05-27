@@ -1,7 +1,7 @@
 import React from 'react'
 import './DatesSearch.css'
-import When from './When'
-import Back from './Back'
+import WhenDate from './WhenDate'
+import BackDate from './BackDate'
 
 function DatesSearch({ handleFilters }) {
   const handleOnDateChange = (data) => {
@@ -10,8 +10,8 @@ function DatesSearch({ handleFilters }) {
 
   return (
     <div className='datesSearch'>
-      <When handleOnDateChange={handleOnDateChange} />
-      <Back handleOnDateChange={handleOnDateChange}/>
+      <WhenDate handleOnDateChange={handleOnDateChange} />
+      <BackDate handleOnDateChange={handleOnDateChange}/>
     </div>
     )
 }

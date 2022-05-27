@@ -10,7 +10,7 @@ function CountriesSearch({citiesFrom, citiesTo, handleFilters}) {
   }
 
   return (
-    <div className='countries'>
+    <div className='countriesSearch__fromto'>
         <FromToCountry name={'from_city'} placeholder={'From'} handleOnChange={handleOnChange} cities={citiesFrom} />
         <FromToCountry name={'to_city'} placeholder={'To'} handleOnChange={handleOnChange} cities={citiesTo} />
     </div>
