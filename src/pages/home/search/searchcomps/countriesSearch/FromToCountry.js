@@ -12,7 +12,7 @@ const CountryFromTo = ({ handleOnChange, name, placeholder, cities }) => {
     <div>
         <div>
         <select onChange={handleChangeCountry} className='countrySearch' name={name} placeholder={placeholder}>
-          <option value={null}>{placeholder}</option>
+          <option value={null} disabled>{placeholder}</option>
           {cities && cities.map((item) => {
             return <option value={item}>{item}</option>
           })}
