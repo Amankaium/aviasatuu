@@ -2,16 +2,11 @@ import React from 'react';
 
 import './PassengersItem.css';
 
-const PassengersItem = () => {
+const PassengersItem = ({ item }) => {
 	return (
 		<form className='passengersItem__form'>
 			<div className='passengersItem__form-top'>
-				<p className='passengersItem__form-title text'>
-					First adult passengers
-				</p>
-				<button className='passengersItem__form-btn caption-text'>
-					delete
-				</button>
+				<p className='passengersItem__form-title text'>{`${item} passenger`}</p>
 			</div>
 
 			<div className='passengersItem_form-main'>
