@@ -9,12 +9,12 @@ function SelectClass({onChange, name, value}){
     return(
       <div className='selectClass'> 
       <div>
-      <label className='economyclass'>
+      <label className='selectClass__economyclass'>
       <input type='radio' value='Economy' checked={value === 'Economy'} name='class' onChange={handleChange} /> Economy
       </label>
       </div>
       <div>
-      <label className='businessclass'>
+      <label className='selectClass__businessclass'>
       <input type='radio' value='Business' checked={value === 'Business'} name='class' onChange={handleChange} /> Business
       </label>
       </div>
