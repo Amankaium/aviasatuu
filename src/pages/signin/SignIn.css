@@ -1,256 +1,248 @@
 .main_wrapper {
-    display: flex;
-    justify-content: center;
-    width: 812px;
-    height: 603px;
-    margin-bottom: 20px;
-    border: 1px solid #FFFFFF;
+	display: flex;
+	justify-content: center;
+	width: 812px;
+	height: 603px;
+	margin-bottom: 20px;
+	border: 1px solid #ffffff;
 }
 .close_x {
-position: absolute;
-left: 69%;
-top: 121px; 
-
+	position: absolute;
+	left: 69%;
+	top: 121px;
 }
 .wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 812px;
-    height: 603px;
+	display: flex;
+	justify-content: space-between;
+	width: 812px;
+	height: 603px;
 }
 .lightBlueSideBar {
-    position: relative;
-   width: 364px;
-   height: 603px;
-   left: 0px;
-   top: 0px;
-   background: #2E6CE7;
-   }
+	position: relative;
+	width: 364px;
+	height: 603px;
+	left: 0px;
+	top: 0px;
+	background: #2e6ce7;
+}
 
-   .lightBlueSignIn {
-    position: absolute;
-    width: 57px;
-    height: 17px;
-    left: 154px;
-    top: 46px;
-    /* font-family: 'Inter';
+.lightBlueSignIn {
+	position: absolute;
+	width: 57px;
+	height: 17px;
+	left: 154px;
+	top: 46px;
+	/* font-family: 'Inter';
     font-style: normal; */
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #FFFFFF;
-  }
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #ffffff;
+}
 
-  .lightBlueAviasatuu {
-    position: absolute;
-    width: 244px;
-    height: 49px;
-    left: 61px;
-    top: 274px;
-    /* font-family: 'Inter';
+.lightBlueAviasatuu {
+	position: absolute;
+	width: 244px;
+	height: 49px;
+	left: 61px;
+	top: 274px;
+	/* font-family: 'Inter';
     font-style: normal; */
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 49px;
-    color: #FFFFFF;
-  }
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 49px;
+	color: #ffffff;
+}
 
-  .lightBlueLongText {
-    position: absolute;
-    width: 212px;
-    height: 54px;
-    left: 77px;
-    top: 343px;
-    /* font-family: 'Inter';
+.lightBlueLongText {
+	position: absolute;
+	width: 212px;
+	height: 54px;
+	left: 77px;
+	top: 343px;
+	/* font-family: 'Inter';
     font-style: normal; */
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: #FFFFFF;
-  }
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: center;
+	color: #ffffff;
+}
 
-  .rightWhiteSideBar {
-    position: relative;
-    width: 430px;
-    height: 603px;
-    padding: 10px;
-    background: #FFFFFF;
-  }
-
+.rightWhiteSideBar {
+	position: relative;
+	width: 430px;
+	height: 603px;
+	padding: 10px;
+	background: #ffffff;
+}
 
 .formsReg {
-    display: absolute;
-    width: 390px;
-    height: 592px;
-    margin-bottom: -5px;
+	display: absolute;
+	width: 390px;
+	height: 592px;
+	margin-bottom: -5px;
 }
 
 .joinText {
-    margin: 30px;
-    margin-left: 60px;
-    /* font-family: 'Inter';
+	margin: 30px;
+	margin-left: 60px;
+	/* font-family: 'Inter';
     font-style: normal; */
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    color: #443E3E;
-
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 150%;
+	color: #443e3e;
 }
 
 .logInGmFcb {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    margin-left: 55px;
-    
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	margin-left: 55px;
 }
 
 .reg_Gmail {
-position: relative;
-width: 110px;
-left:  -20px;
-/* font-family: 'Inter';
+	position: relative;
+	width: 110px;
+	left: -20px;
+	/* font-family: 'Inter';
 font-style: normal; */
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-color: #000000;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
 }
 
 .reg_facebook {
-    position: relative;
-width: 138px;
-height: 17px;
-left: -15px;
-/* font-family: 'Inter';
+	position: relative;
+	width: 138px;
+	height: 17px;
+	left: -15px;
+	/* font-family: 'Inter';
 font-style: normal; */
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-color: #000000;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
 }
 
 .formInput {
-    margin: 5px 52px;
-    padding-top: 5px;
- }
- 
-.email_class, .password_class {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    background: #f1f1f1;
-    border: none;
-    border-bottom: 1px solid #999999;;
-    background-color: transparent;
-    color: inherit;
-    outline: none;
-    /* font-family: 'Inter';
-font-style: normal; */
-font-weight: 400;
-font-size: 20px;
-line-height: 150%;
-color: #999999;
+	margin: 5px 52px;
+	padding-top: 5px;
 }
 
-.email_class:focus, .password_class:focus {
-    background-color: #ddd;
-    outline: none;
+.email_class,
+.password_class {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	background: #f1f1f1;
+	border: none;
+	border-bottom: 1px solid #999999;
+	background-color: transparent;
+	color: inherit;
+	outline: none;
+	/* font-family: 'Inter';
+font-style: normal; */
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: #999999;
+}
+
+.email_class:focus,
+.password_class:focus {
+	background-color: #ddd;
+	outline: none;
 }
 
 .circle_remember {
-    margin: 30px;
-    margin-top: 20px;
+	margin: 30px;
+	margin-top: 20px;
 }
 
 .remember_text {
-    position: relative;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    border: 1px solid #999999;
-    left: 30px;
-  }
+	position: relative;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	border: 1px solid #999999;
+	left: 30px;
+}
 
-  
-  .remember_me {
-    position: relative;
-    width: 97px;
-    height: 17px;
-    left: 40px;
-    /* font-family: 'Inter';
+.remember_me {
+	position: relative;
+	width: 97px;
+	height: 17px;
+	left: 40px;
+	/* font-family: 'Inter';
     font-style: normal; */
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #999999;
-  }
-
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #999999;
+}
 
 .signInBtn {
-    position: relative;
-    width: 307px;
-    height: 55px;
-    left: 20px;
-    background: #E65425;
-    border: none;
-    cursor: pointer;
-    opacity: 0.9;
-    left: 60px;
-/* font-family: 'Inter';
+	position: relative;
+	width: 307px;
+	height: 55px;
+	left: 20px;
+	background: #e65425;
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+	left: 60px;
+	/* font-family: 'Inter';
 font-style: normal; */
-font-weight: 500;
-font-size: 18px;
-line-height: 150%;
-color: #FFFFFF;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	color: #ffffff;
 }
 
 .signInBtn:hover {
-    opacity: 1;
+	opacity: 1;
 }
-
 
 .signUpAll {
-    display: flex;
- margin: 20px;
-  justify-content: space-around;
-height: 17px;
-/* left: 30px; */
-/* font-family: 'Inter';
+	display: flex;
+	margin: 20px;
+	justify-content: space-around;
+	height: 17px;
+	/* left: 30px; */
+	/* font-family: 'Inter';
 font-style: normal; */
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-color: #443E3E;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #443e3e;
 }
-    
 
-
- .signUpText {
-    position: relative;
-    /* font-family: 'Inter';
+.signUpText {
+	position: relative;
+	/* font-family: 'Inter';
     font-style: normal; */
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #443E3E;
-    margin-top: 5px;
-    left: 20px;
- }
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #443e3e;
+	margin-top: 5px;
+	left: 20px;
+}
 
- .signUpP {
-    position: relative;
-    /* font-family: 'Inter';
+.signUpP {
+	position: relative;
+	/* font-family: 'Inter';
     font-style: normal; */
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #E65425;
-    margin-top: 5px;
-    left: -20px;
- }
-
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #e65425;
+	margin-top: 5px;
+	left: -20px;
+}
