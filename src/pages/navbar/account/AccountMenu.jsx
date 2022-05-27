@@ -1,35 +1,68 @@
-import React from 'react';
-import Vector from '../../../assets/icons/Vector.svg';
+import React, { useContext, useState } from 'react';
+import { loginContext } from '../../../App';
+import codicon_account from '../../../assets/icons/codicon_account.svg';
 import settings from '../../../assets/icons/settings.svg';
 import documents from '../../../assets/icons/documents.svg';
 import ticket from '../../../assets/icons/ticket.svg';
 import { Link } from 'react-router-dom';
 import './Account.css';
 
-function AccountMenu() {
-	return (
-		<div className='vectorImg'>
-			<Link to='/' className='accountLogo'>
-				<img src={Vector} alt='' />
 
-			</Link>
-			<div className='accountContent'>
-				<Link to='/' className='settings'>
-					<img src={settings} alt='' />{' '}
-				</Link>
-				<Link to='/' className='documents'>
-					{' '}
-					<img src={documents} alt='' />
-				</Link>
-				<Link to='/' className='ticket'>
-					{' '}
-					<img src={ticket} alt='' />
-				</Link>
-				<Link to='/'>
-					<button className='menu-btn'>Sign In</button>
-				</Link>
-			</div>
-		</div>
-	);
+function AccountMenu(props) {
+    const login = useContext(loginContext);
+
+    function signOut() {
+        props.setLoginState(false)
+    }
+    return (
+        <div className='vectorImg'>
+            <Link to='/' className='accountLogo'>
+                <img src={codicon_account} alt='' />
+                <span className="account_text">
+                    {login ?  'Account' : "Sign In"}
+                </span>
+
+            </Link>
+            <div className='accountContent'>
+                {login ? (<>
+
+
+                    <button className='menu-btn' onClick={signOut}>Sign Out</button>
+
+                </>) : <Link to='/signin'>
+
+                    <Link to='/' className='settings'>
+                        <img src={settings} alt='' />{' '}
+                    </Link>
+                    <Link to='/' className='documents'>
+                        {' '}
+                        <img src={documents} alt='' />
+                    </Link>
+                    <Link to='/' className='ticket'>
+                        {' '}
+                        <img src={ticket} alt='' />
+                    </Link>
+                    <Link to='/signin'>
+                    <button className='menu-btn'>Sign In</button>
+                    </Link>
+                </Link>}
+
+
+                <Link to='/' className='settings'>
+                        <img src={settings} alt='' />{' '}
+                    </Link>
+                    <Link to='/' className='documents'>
+                        {' '}
+                        <img src={documents} alt='' />
+                    </Link>
+                    <Link to='/' className='ticket'>
+                        {' '}
+                        <img src={ticket} alt='' />
+                    </Link>
+
+
+            </div>
+        </div>
+    );
 }
 export default AccountMenu;
