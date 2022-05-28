@@ -6,9 +6,11 @@ import FlightsItem from '../flightsitem/FlightsItem';
 import './FlightsList.css';
 
 const FlightsList = () => {
-	const { flights, code_city_maker } = useContext(FlightsContext);
+	const { flights, code_city_maker, additionalData } =
+		useContext(FlightsContext);
+	const { adults, children } = additionalData;
 
-	console.log(flights);
+	// console.log(flights);
 	return (
 		<div className='flightsList-inner'>
 			<header className='flights-header'>
@@ -34,7 +36,8 @@ const FlightsList = () => {
 				</Link>
 				<p className='text description__text description__item'>One-way</p>
 				<p className='text description__text description__item'>
-					2 adult - 2 children
+					{adults} adult{adults > 1 && 's'} - {children} child
+					{children > 1 && 'ren'}
 				</p>
 				<p className='text description__text description__item'>Economy</p>
 				<select className='flights-variants__select text description__item'>
@@ -57,7 +60,14 @@ const FlightsList = () => {
 				</div>
 			</div>
 			{flights &&
-				flights.map((flight, index) => <FlightsItem key={index} {...flight} />)}
+				flights.map((flight, index) => (
+					<FlightsItem
+						key={index}
+						{...flight}
+						adults={adults}
+						children={children}
+					/>
+				))}
 		</div>
 	);
 };
