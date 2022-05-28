@@ -13,10 +13,11 @@
 	width: 150px;
 	height: 200px;
 	left: -20px;
+	top: 30px;
 	background: #ffffff;
 	border-radius: 10px;
 	/* z-index: 1; */
-}
+  }
 
 /* Links inside the dropdown */
 .settings {
@@ -74,3 +75,26 @@
 
 	color: #ffffff;
 }
+
+.account_text {
+	position: relative;
+	color: var(--light-color);
+	left: 88.59%;
+right: 6.27%;
+
+top: -28px;;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+}
+
+
+
+
+
+
+
+

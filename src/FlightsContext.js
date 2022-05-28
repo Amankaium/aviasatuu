@@ -2,6 +2,7 @@ import { createContext, useState, useEffect } from 'react';
 const FlightsContext = createContext();
 
 export function FlightsProvider({ children }) {
+	const [isLogin, setIsLogin] = useState(false)
 	const [flights, setFlights] = useState([]);
 	const [additionalData, setAdditionalData] = useState({
 		adults: 0,
@@ -71,6 +72,8 @@ export function FlightsProvider({ children }) {
 				additionalData,
 				setAdditionalData,
 				priceSum,
+				isLogin, 
+				setIsLogin
 			}}>
 			{children}
 		</FlightsContext.Provider>

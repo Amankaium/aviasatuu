@@ -1,143 +1,111 @@
+
 .main_conteiner {
 	display: flex;
-	justify-content: center;
-	width: 812px;
-	height: 680px;
-	margin-bottom: 20px;
-	border: 1px solid #ffffff;
-}
-.close {
-	position: absolute;
-	left: 69%;
-	top: 121px;
-}
-.conteiner {
+	justify-content: space-between;
+	margin: 0 auto 20px;
+	max-width: 812px;
+	box-shadow: 0 0 14px 0;
+  }
+  .conteiner {
 	display: flex;
 	justify-content: space-between;
 	width: 812px;
-	height: 680px;
-}
-.blueSideBar {
-	position: relative;
-	width: 364px;
-	height: 680px;
-	left: 0px;
-	top: 0px;
+  }
+  .blueSideBar {
+	padding: 40px 60px;
 	background: #2e6ce7;
-}
-
-.blueSignUp {
-	position: absolute;
-	width: 57px;
-	height: 17px;
-	left: 154px;
-	top: 46px;
-	/* font-family: 'Inter';
-    font-style: normal; */
+	width: 365px;
+  }
+  
+  .blueSignUp {
+	margin-bottom: 211px;
+	display: flex;
+	flex-direction: column;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
 	text-align: center;
 	color: #ffffff;
-}
-
-.blueAviasatuu {
-	position: absolute;
-	width: 244px;
-	height: 49px;
-	left: 61px;
-	top: 274px;
-	/* font-family: 'Inter';
-    font-style: normal; */
+  }
+  
+  .blueAviasatuu {
+	margin-bottom: 20px;
 	font-weight: 800;
 	font-size: 48px;
 	line-height: 49px;
 	color: #ffffff;
-}
-
-.blueLongText {
-	position: absolute;
-	width: 212px;
-	height: 54px;
-	left: 77px;
-	top: 343px;
-	/* font-family: 'Inter';
-    font-style: normal; */
+	text-align: center;
+  }
+  
+  .blueLongText {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
 	text-align: center;
 	color: #ffffff;
-}
-
-.whiteSideBar {
-	position: relative;
-	width: 430px;
-	height: 680px;
-	padding: 10px;
+  }
+  
+  .whiteSideBar {
+	padding: 45px 70px;
 	background: #ffffff;
-}
-
-.formReg {
-	display: absolute;
-	width: 390px;
-	height: 592px;
+  }
+  
+  .formReg {
 	margin-bottom: -5px;
-}
-
-.join_text {
-	margin: 30px;
-	margin-left: 60px;
-	/* font-family: 'Inter';
-    font-style: normal; */
+  }
+  
+  .join_text {
+	margin-bottom: 25px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 150%;
 	color: #443e3e;
-}
-
-.loggmfcb {
+  }
+  
+  .loggmfcb {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 30px;
-	margin-left: 55px;
-}
-
-.regGmail {
-	position: relative;
-	width: 110px;
-	left: -20px;
-	/* font-family: 'Inter';
-font-style: normal; */
+	margin-bottom: 70px;
+  }
+  
+  .logIngmailLink {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  .logIngmailLink img,
+  .LogInFacebookLink img {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 10px;
+  }
+  .LogInFacebookLink {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .regGmail {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
 	color: #000000;
-}
-
-.regfacebook {
-	position: relative;
-	width: 138px;
-	height: 17px;
-	left: -15px;
-	/* font-family: 'Inter';
-font-style: normal; */
+  }
+  
+  .regfacebook {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
 	color: #000000;
-}
-
-.form_input {
-	margin: 5px 52px;
-	padding-top: 5px;
-}
-
-.email_cl,
-.password_cl {
+  }
+  
+  .email_cl,
+  .password_cl {
+	padding-bottom: 15px;
+	padding-right: 10px;
+	margin-bottom: 40px;
 	width: 100%;
-	padding: 15px;
-	margin: 5px 0 22px 0;
 	display: inline-block;
 	background: #f1f1f1;
 	border: none;
@@ -145,104 +113,127 @@ font-style: normal; */
 	background-color: transparent;
 	color: inherit;
 	outline: none;
-	/* font-family: 'Inter';
-font-style: normal; */
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 18px;
+	line-height: 150%;
+	color: #443e3e;
+  }
+  
+  .password_cl:last-child {
+	margin-bottom: 30px;
+  }
+  
+  .email_cl::placeholder,
+  .password_cl::placeholder {
+	font-weight: 400;
+	font-size: 18px;
 	line-height: 150%;
 	color: #999999;
-}
-
-.email_cl:focus,
-.password_cl:focus {
+  }
+  
+  .email_cl:focus,
+  .password_cl:focus {
 	background-color: #ddd;
 	outline: none;
-}
-
-.circle_rem {
-	margin: 30px;
-	margin-top: 20px;
-}
-
-.remember {
-	position: relative;
-	border-radius: 50%;
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	border: 1px solid #999999;
-	left: 30px;
-}
-
-.rememberMe {
-	position: relative;
-	width: 97px;
+  }
+  
+  .circle_rem label {
+	display: flex;
+	align-items: center;
+  }
+  .circle_rem {
+	margin-bottom: 50px;
+  }
+  
+  label .remember {
+	margin-right: 10px;
 	height: 17px;
-	left: 40px;
-	/* font-family: 'Inter';
-    font-style: normal; */
+	width: 17px;
+	border-radius: 100%;
+	cursor: pointer;
+  }
+  
+  .rememberMe {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
 	color: #999999;
-}
-
-.signUpBtn {
-	position: relative;
+  }
+  
+  .signUpBtn {
+	display: block;
+	padding: 15px 0;
 	width: 307px;
-	height: 55px;
-	left: 20px;
+	margin: 0 auto 20px;
 	background: #e65425;
 	border: none;
 	cursor: pointer;
 	opacity: 0.9;
-	left: 60px;
-	/* font-family: 'Inter';
-font-style: normal; */
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 150%;
 	color: #ffffff;
-}
-
-.signUpBtn:hover {
+  }
+  
+  .signUpBtn:hover {
 	opacity: 1;
-}
-
-.signInAll {
+  }
+  
+  .signInAll {
 	display: flex;
-	margin: 20px;
 	justify-content: space-around;
-	height: 17px;
-	/* left: 30px; */
-	/* font-family: 'Inter';
-font-style: normal; */
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
 	color: #443e3e;
-}
-
-.signInText {
+  }
+  
+  .signInText {
 	position: relative;
-	/* font-family: 'Inter';
-    font-style: normal; */
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
 	color: #443e3e;
-	margin-top: 5px;
-	left: 20px;
-}
-
-.signinP {
+  }
+  
+  .signinP {
 	position: relative;
-	/* font-family: 'Inter';
-    font-style: normal; */
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 17px;
 	color: #e65425;
-	margin-top: 5px;
-	left: -20px;
-}
+  }
+  
+  @media (max-width: 880px) {
+	.main_conteiner {
+	  width: 100%;
+	}
+	.conteiner {
+	  flex-wrap: wrap;
+	}
+	.blueSideBar {
+	  width: 100%;
+	}
+	.blueSignUp {
+	  margin-bottom: 50px;
+	}
+	.join_text {
+	  text-align: center;
+	}
+  }
+  
+  @media (max-width: 500px) {
+	.signUpBtn {
+	  width: 100%;
+	}
+	.loggmfcb {
+	  display: block;
+	}
+	.logIngmail {
+	  margin-bottom: 30px;
+	}
+	.blueSideBar,
+	.whiteSideBar {
+	  padding: 40px 10px;
+	}
+  }
