@@ -3,7 +3,7 @@ import './PassengerSearch.css'
 import SelectClass from './SelectClass'
 import IncDecCounter from './IncDecCounter'
 
-function PassengerSearch() {
+function PassengerSearch({ handleAddData }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggling = () => setIsOpen(!isOpen);
   const [state, setState] = useState({
@@ -13,18 +13,20 @@ function PassengerSearch() {
     class: 'Economy'
   })
   const handleChange = (value, name)=>{
+    handleAddData({ [name]: value })
     setState({...state, [name]:value})
   }
+
   const passCount = useMemo(()=>{return state.adults+ state.children + state.babies}, [state])
   return (
     <div>
-      <input type='text' className='passengerSP'onClick={toggling} value={passCount ? `${passCount} Passengers, ${state.class}` : 'Passengers&Class'}  />
+      <input type='text' className='passengerSearch'onClick={toggling} value={passCount ? `${passCount} Passengers, ${state.class}` : 'Passengers&Class'}  />
       {isOpen && (
-        <div className='dropdown'>
+        <div className='passengerSearch__dropdown'>
         <AdultCategory  value={state.adults} name={"adults"} onChange={handleChange}/>
         <ChildrenCategory value={state.children} name={"children"} onChange={handleChange}/>
         <BabiesCategory value={state.babies} name={"babies"} onChange={handleChange}/>
-        <SelectClass onChange={handleChange}  name='class'/>
+        <SelectClass value={state.class} onChange={handleChange}  name='class'/>
         </div>
         )}
     </div>
@@ -34,11 +36,11 @@ function PassengerSearch() {
 function AdultCategory(props){
 
   return(
-    <div className="components">
-      <div className='passengerComponent'>
-        <div className='passengerItem'>
-          <div className='passengerCategory'>Adults</div>
-          <div className='passengerCategoryInfo'>Over 12 years old</div>
+    <div className="passengerSearch__components">
+      <div className='passengerSearch__passengerComponent'>
+        <div className='passengerSearch__passengerItem'>
+          <div className='passengerSearch__passengerCategory'>Adults</div>
+          <div className='passengerSearch__passengerCategoryInfo'>Over 12 years old</div>
         </div>
         <IncDecCounter {...props} />
       </div>
@@ -47,11 +49,11 @@ function AdultCategory(props){
 }
 function ChildrenCategory(props){
   return(
-    <div className="components">
-      <div className='passengerComponent'>
-        <div className='passengerItem'>
-          <div className='passengerCategory'>Children</div>
-          <div className='passengerCategoryInfo'>2 to 12 years old</div>
+    <div className="passengerSearch__components">
+      <div className='passengerSearch__passengerComponent'>
+        <div className='passengerSearch__passengerItem'>
+          <div className='passengerSearch__passengerCategory'>Children</div>
+          <div className='passengerSearch__passengerCategoryInfo'>2 to 12 years old</div>
         </div>
         <IncDecCounter {...props} />
       </div>
@@ -61,11 +63,11 @@ function ChildrenCategory(props){
 
 function BabiesCategory(props){
   return(
-    <div className="components">
-      <div className='passengerComponent'>
-        <div className='passengerItem'>
-          <div className='passengerCategory'>Babies</div>
-          <div className='passengerCategoryInfo'>Up to 2 years old</div>
+    <div className="passengerSearch__components">
+      <div className='passengerSearch__passengerComponent'>
+        <div className='passengerSearch__passengerItem'>
+          <div className='passengerSearch__passengerCategory'>Babies</div>
+          <div className='passengerSearch__passengerCategoryInfo'>Up to 2 years old</div>
         </div>
         <IncDecCounter {...props} />
       </div>

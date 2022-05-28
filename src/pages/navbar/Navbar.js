@@ -5,14 +5,14 @@ import Language from './language/Language';
 import logo from '../../../src/assets/icons/logo.svg'; 
 import './Navbar.css'; 
  
-function Navbar(props) { 
+function Navbar() { 
  return ( 
   <nav className='navbar'> 
    <Link to='/'> 
     <img src={logo} alt='logo of the AviaSatuu Company' /> 
    </Link> 
    <div className='navbarLeft'> 
-   <Account setLoginState={props.setLoginState} /> 
+   <Account/> 
    <Language /> 
    </div> 
   </nav> 

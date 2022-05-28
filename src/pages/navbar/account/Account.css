@@ -13,10 +13,11 @@
 	width: 150px;
 	height: 200px;
 	left: -20px;
+	top: 30px;
 	background: #ffffff;
 	border-radius: 10px;
 	/* z-index: 1; */
-}
+  }
 
 /* Links inside the dropdown */
 .settings {

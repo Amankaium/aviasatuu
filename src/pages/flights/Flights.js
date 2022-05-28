@@ -1,8 +1,5 @@
-import React from 'react';
 import FlightsList from '../../components/flightslist/FlightsList';
 
-const Flights = () => {
-	return <FlightsList />;
-};
+const Flights = () => <FlightsList />;
 
 export default Flights;

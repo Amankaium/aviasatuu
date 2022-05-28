@@ -1,5 +1,6 @@
+
 import React, { useContext, useState } from 'react';
-import { loginContext } from '../../../App';
+import FlightsContext from '../../../FlightsContext';
 import codicon_account from '../../../assets/icons/codicon_account.svg';
 import settings from '../../../assets/icons/settings.svg';
 import documents from '../../../assets/icons/documents.svg';
@@ -8,23 +9,23 @@ import { Link } from 'react-router-dom';
 import './Account.css';
 
 
-function AccountMenu(props) {
-    const login = useContext(loginContext);
+function AccountMenu() {
+    const {isLogin, setIsLogin} = useContext(FlightsContext);
 
     function signOut() {
-        props.setLoginState(false)
+        setIsLogin(false)
     }
     return (
         <div className='vectorImg'>
             <Link to='/' className='accountLogo'>
                 <img src={codicon_account} alt='' />
                 <span className="account_text">
-                    {login ?  'Account' : "Sign In"}
+                    {isLogin ?  'Account' : "Sign In"}
                 </span>
 
             </Link>
             <div className='accountContent'>
-                {login ? (<>
+                {isLogin ? (<>
 
 
                     <button className='menu-btn' onClick={signOut}>Sign Out</button>

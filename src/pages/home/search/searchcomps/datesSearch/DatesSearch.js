@@ -1,13 +1,17 @@
 import React from 'react'
 import './DatesSearch.css'
-import When from './When'
-import Back from './Back'
+import WhenDate from './WhenDate'
+import BackDate from './BackDate'
 
-function DatesSearch() {
+function DatesSearch({ handleFilters }) {
+  const handleOnDateChange = (data) => {
+    handleFilters(data)
+  }
+
   return (
     <div className='datesSearch'>
-      <When />
-      <Back />
+      <WhenDate handleOnDateChange={handleOnDateChange} />
+      <BackDate handleOnDateChange={handleOnDateChange}/>
     </div>
     )
 }
