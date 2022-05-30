@@ -197,6 +197,18 @@
 	border-radius: 50%;
 	background: var(--active-color);
   }
+
+  .go_homeBtn {
+	  color: var(--dark-color);
+	margin: 0 auto 35px;
+	padding: 12px 0;
+	width: 307px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 150%;
+	opacity: 0.9;
+	transition: opacity 0.3s ease-in-out;
+  }
   
   @-webkit-keyframes planet-rotate {
 	to {
@@ -209,3 +221,7 @@
 	  transform: rotate(1turn);
 	}
   }
+
+
+
+  
