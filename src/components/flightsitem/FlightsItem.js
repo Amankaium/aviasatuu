@@ -1,5 +1,5 @@
-import React, { useContext, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import FlightsContext from '../../FlightsContext';
 import planeIcon from '../../assets/icons/icon_plane.svg';
 import './FlightsItem.css';
@@ -18,15 +18,28 @@ const FlightsItem = ({
 	const { code_city_maker, getDateHours, durationMaker, priceSum } =
 		useContext(FlightsContext);
 
-	const fromCityCodeRef = useRef(null);
+	const navigate = useNavigate();
+	const goToPassengers = () => {
+		navigate('/passengers', {
+			state: {
+				aviacompany,
+				duration,
+				from_city,
+				to_city,
+				start,
+				end,
+				price,
+				adults,
+				children,
+			},
+		});
+	};
 
 	return (
 		<div className='flightsItem__inner'>
 			<div className='flightsItem__times flightsItem__inner-element'>
 				<p className='flightsItem__time sub-title'>
-					<span className='caption-text' ref={fromCityCodeRef}>
-						{code_city_maker(from_city)}
-					</span>
+					<span className='caption-text'>{code_city_maker(from_city)}</span>
 					{getDateHours(new Date(start))}
 				</p>
 				<img src={planeIcon} alt='icon of the plane' />
@@ -52,11 +65,11 @@ const FlightsItem = ({
 				.toFixed(2)
 				.replace(/\d(\d{3})+\)/g, '$& ')}$`}</p>
 
-			<Link
+			<button
 				className='fligthsItem-btn caption-text flightsItem__inner-element'
-				to='/passengers'>
+				onClick={goToPassengers}>
 				Choose flight
-			</Link>
+			</button>
 		</div>
 	);
 };
