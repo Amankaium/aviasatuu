@@ -11,10 +11,9 @@
 }
 /* ///////////////начало payment_form///////////////////// */
 .payment_form{
-    width: 50%;
+    width: 543px;
 	display: block;
     background-color: #fff;
-
 }
 .payment_form h1{
     font-size: 32px;
@@ -34,26 +33,21 @@
     justify-content: center;
 }
 
-
-
 .field-credit_card input{
 	width: 287px;
 	height: 34px;
 	margin-right: 21px;
-	/* padding-left: 11px; */
 	margin-bottom: 20px;
 }
 .field-cvc input{
 	width: 138px;
 	height: 34px;
-	/* padding-left: 11px; */
 	margin-bottom: 20px;
 }
 .field-month select{
 	width: 212px;
 	height: 34px;
 	margin-right: 21px;
-	/* padding-left: 11px; */
 	margin-bottom: 20px;
     outline: none;
     color: #878d8d;
@@ -63,19 +57,19 @@
 .field-year input{
 	width: 211px;
 	height: 34px;
-	/* padding-left: 11px; */
 	margin-bottom: 20px;
+}
+.stroka{
+	display: flex;
 }
 .field-card_holder input{
 	width: 442px;
 	height: 34px;
-	/* padding-left: 11px; */
 	margin-bottom: 40px;
 }
 .email input{
     width: 442px;
 	height: 34px;
-	/* padding-left: 11px; */
     margin-bottom: 20px;
 }
 
@@ -165,6 +159,14 @@
 	background: linear-gradient(to bottom, #d64f22 5%, #d64f22 100%);
 	background-color: #d64f22;
 }
+
+.payment_picture{
+	width: 543px;
+	display: flex;
+	flex-flow: wrap;
+}
+
+
 /* .payment_form_content ul li input[type="url"]:hover{
     background: linear-gradient(to bottom, #d64f22 5%, #d64f22 100%);
     color: white !important;
@@ -172,5 +174,33 @@
 
 
 /* ///////////////конец payment_form ////////////////*/
-/* ////////////начало payment_picture/////////////////// */
-/* ////////////конрец payment_picture/////////////////// */
+
+
+
+/* /////////////адаптация//////////// */
+@media screen and (max-width: 360px){
+	.payment_picture{
+		display: none;
+	}
+	.checkout__wrapper{
+		justify-content: center;
+	}
+	.payment_form_content ul li{
+		display: inline;
+	}
+	.field-credit_card input,.field-cvc input,.field-month input,.field-year input,.field-card_holder input,.email input{
+		width: 100%;
+	}
+	Link{
+		display: block;
+	}
+	.checkout_content,.checkout__wrapper,.payment_form,.payment_form_content_wrapper,.payment_form_content,.payment_form_content ul{
+		height: 800px;
+	}
+	.stroka{
+		display: inline;
+	}
+	.checkbox{
+		padding-bottom: 10px;
+	}
+}
