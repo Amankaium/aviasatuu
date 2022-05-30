@@ -1,22 +1,13 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState } from 'react';
 const FlightsContext = createContext();
 
 export function FlightsProvider({ children }) {
-	const [isLogin, setIsLogin] = useState(false)
-	const [flights, setFlights] = useState([]);
 	const [additionalData, setAdditionalData] = useState({
 		adults: 0,
 		children: 0,
 		babies: 0,
 		class: 'Economy',
 	});
-	const getFlight = () => {
-		fetch('http://kaiaman.pythonanywhere.com/api/aviasatuu/flights/')
-			.then(response => response.json())
-			.then(data => setFlights(data));
-	};
-
-	useEffect(getFlight, []);
 
 	const code_city_maker = city => {
 		switch (city) {
@@ -50,7 +41,6 @@ export function FlightsProvider({ children }) {
 		}
 		return `${dateHours}:${dateMinutes}`;
 	};
-	//* Renders the filtered ones from api, but I don't know how to manage other parameters and filtered them out. Maybe there is a way to do it. Maybe add another useState for filtered list, but how to manage it?
 
 	const durationMaker = duration => {
 		const hours = Math.floor(duration / 60);
@@ -65,15 +55,13 @@ export function FlightsProvider({ children }) {
 	return (
 		<FlightsContext.Provider
 			value={{
-				flights,
+				// flights,
 				code_city_maker,
 				getDateHours,
 				durationMaker,
 				additionalData,
 				setAdditionalData,
 				priceSum,
-				isLogin, 
-				setIsLogin
 			}}>
 			{children}
 		</FlightsContext.Provider>
