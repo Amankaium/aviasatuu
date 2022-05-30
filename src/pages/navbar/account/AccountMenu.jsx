@@ -32,14 +32,14 @@ function AccountMenu() {
 
                 </>) : <Link to='/signin'>
 
-                    <Link to='/' className='settings'>
+                    <Link to='passengers' className='settings'>
                         <img src={settings} alt='' />{' '}
                     </Link>
-                    <Link to='/' className='documents'>
+                    <Link to='/passengers' className='documents'>
                         {' '}
                         <img src={documents} alt='' />
                     </Link>
-                    <Link to='/' className='ticket'>
+                    <Link to='/passengers' className='ticket'>
                         {' '}
                         <img src={ticket} alt='' />
                     </Link>

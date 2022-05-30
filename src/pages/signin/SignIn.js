@@ -12,7 +12,7 @@ const SignIn = props => {
   const [userName, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [token, setToken] = useState('');
-  const { isLogin } = useContext(FlightsContext);
+  const { isLogin, setIsLogin } = useContext(FlightsContext);
 
   function getToken() {
     axios
@@ -23,7 +23,7 @@ const SignIn = props => {
       .then(function (response) {
         console.log(response);
         setToken(response.data.key);
-        props.setLoginState(true);
+        setIsLogin(true);
       })
       .catch(function (error) {
         console.log(error);
@@ -50,6 +50,11 @@ const SignIn = props => {
               <em className='planet left'> You are </em>
               <em className='planet right'>logged in</em>
             </div>
+            <div className='go_home_page'>
+            <button type='button' className='go_homeBtn'>
+            <Link to="/"> Click here to go to the home page </Link>
+              </button>
+              </div>
           </h1>
         ) : (
           <form className='formsReg'>
