@@ -27,6 +27,7 @@ const CheckoutPage = () => {
 										<input type="number" name="field2" className='field-style field-split align-right' placeholder="035" />
 									</div>
 								</li>
+								<div class="stroka">
 								<li>
 									<div className='field-month '>
 										<label for="field3">Expiry month</label><br />
@@ -47,11 +48,15 @@ const CheckoutPage = () => {
 											<option value="12">December </option>
 										</select>
 									</div>
+								</li>
+								<li>
 									<div className='field-year'>
 										<label for="field4">Expire year</label><br />
 										<input type="number" name="field4" class="field-style field-split align-right" placeholder="2025" />
 									</div>
 								</li>
+								</div>
+								
 								<li>
 									<div className='field-card_holder'>
 										<label for="field3">Card holder’s name</label><br />
@@ -82,6 +87,7 @@ const CheckoutPage = () => {
 				</div>
 				<div className="payment_picture"><img src={BgImg} alt="" />
 				</div>
+				
 			</div>
 		</div>
 	);
