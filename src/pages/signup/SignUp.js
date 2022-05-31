@@ -1,11 +1,39 @@
 
-import React from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import './SignUp.css';
 import { Link } from 'react-router-dom';
 import gmail_logo from '../../assets/icons/gmail_logo.svg';
 import fb_logo from '../../assets/icons/fb_logo.svg';
+import axios from 'axios';
+import FlightsContext from '../../FlightsContext';
 
-const SignUp = () => {
+
+
+
+
+const SignUp = (event) => {
+  const [userName, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [token, setToken] = useState('');
+  const { isRegister, setIsRegister } = useContext(FlightsContext);
+
+  function jetToken() {
+    axios
+    .post('http://kaiaman.pythonanywhere.com/api/registration', {
+      username: userName,
+      password: password,
+     
+    })
+    .then(function (response) {
+      console.log(response);
+      setToken(response.data.key);
+      setIsRegister(true);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
+  
   return (
     <div className='main_conteiner'>
       <div class='conteiner'>
@@ -23,7 +51,13 @@ const SignUp = () => {
           </div>
         </div>
         <div className='whiteSideBar'>
-          <form className='formReg'>
+          {isRegister ? (
+            <div className='rotate_body'>
+            <em className='planet left'> You are </em>
+            <em className='planet right'>logged in</em>
+          </div>
+          ) : (
+            <form className='formReg'>
             <div className='join_text'>You can join with</div>
             <div className='loggmfcb'>
               <div className='logIngmail'>
@@ -45,7 +79,9 @@ const SignUp = () => {
                 className='email_cl'
                 type='text'
                 placeholder='Enter Your Email'
-                name='email'
+                name='userName'
+                value={userName}
+                onChange={e => setUsername(e.target.value)}
                 required
               />
 
@@ -54,6 +90,8 @@ const SignUp = () => {
                 type='password'
                 placeholder='Enter Your Password'
                 name='psw'
+                value={password}
+                onChange={e => setPassword(e.target.value)}
                 required
               />
 
@@ -73,7 +111,7 @@ const SignUp = () => {
               </label>
             </div>
             <div class='signin'>
-              <button type='submit' class='signUpBtn'>
+              <button type='button' onClick={jetToken} class='signUpBtn'>
                 Sign Up
               </button>
             </div>
@@ -85,6 +123,9 @@ const SignUp = () => {
               </div>
             </div>
           </form>
+          
+          )}
+         
         </div>
       </div>
     </div>
