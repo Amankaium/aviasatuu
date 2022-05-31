@@ -66,21 +66,17 @@
   
   .email_class,
   .password_class {
-	padding-bottom: 15px;
 	padding-right: 10px;
-	margin-bottom: 40px;
 	width: 100%;
-	display: inline-block;
-	background: #f1f1f1;
+	height: 50px;
 	border: none;
-	border-bottom: 1px solid #999999;
-	background-color: transparent;
-	color: inherit;
-	outline: none;
-	font-weight: 400;
+	border-bottom: 1px solid #999;
+	margin-bottom: 40px;
 	font-size: 18px;
 	line-height: 150%;
+	background: #f1f1f1;
 	color: #443e3e;
+	outline: none;
   }
   .email_class::placeholder,
   .password_class::placeholder {
